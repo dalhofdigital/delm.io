@@ -8,7 +8,8 @@
           </nuxt-link>
           <v-toolbar-title class="subheading font-weight-medium">Delm</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn color="success" round href="https://apps.shopify.com/deliverymessage">Open in Shopify App Store</v-btn>
+          <v-btn flat round to="/docs">Documentation</v-btn>
+          <v-btn color="success" round href="https://apps.shopify.com/delm">Open in Shopify App Store</v-btn>
         </v-toolbar>
       </v-container>
     </div>

@@ -7,7 +7,7 @@
             <h1 class="display-2 font-weight-medium white--text mb-4">Add next delivery date and dispatch-countdown to your product pages</h1>
             <p style="font-size:20px;line-height:28px" class="font-weight-regular white--text mb-2"><span class="d-block">"<strong>Want it tomorrow?</strong> Order within <strong style="color:#C8E6C9">2 hrs, 32 mins and 21 secs</strong>."</span></p>
             <div class="mt-4 mb-3">
-              <v-btn class="ml-0" large round color="success" href="https://apps.shopify.com/deliverymessage">Open in Shopify App Store</v-btn>
+              <v-btn class="ml-0" large round color="success" href="https://apps.shopify.com/delm">Open in Shopify App Store</v-btn>
             </div>
             <p class="subheading white--text mb-0 font-weight-regular">Increase your conversion rate and customer trust.</p>
             <p class="subheading white--text mb-0 font-weight-light"> Only available for Shopify.</p>
