@@ -11,7 +11,10 @@
               <code v-text='`<script src="https://cdn.delm.io/deliverymessage.js"></script>`'></code>
             </div>
 
-            <div style="width: 100%; height: 0px; position: relative; padding-bottom: 48.750%;"><iframe src="https://streamable.com/s/s7mkl/ranxef" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+            <video controls style="max-width:100%;height:auto">
+              <source src="/videos/enable-fast-load.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
         </v-container>
     </div>
 </template>
