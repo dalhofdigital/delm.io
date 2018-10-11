@@ -31,8 +31,8 @@
         <li>Automatic calculation of next dispatch and delivery date.</li>
         <li>Holidays - Disable delivery, disable dispatching or override dispatch time. Holidays can be global or attached to a delivery area.</li>
         <li>Support for fixed delivery date and delivery date range.</li>
-        <li>Add delivery delay and dispatch delay to products and collections.</li>
-        <li>Hide app for specific products or collections.</li>
+        <li>Add delivery delay and dispatch delay to products.</li>
+        <li>Hide app for specific products.</li>
         <li>Hide app when product is out of stock.</li>
         <li>Hide app for unavailable delivery areas - We recommend to hide the app if your customers location cannot be matched with a delivery area because the promised delivery date will be most likely inaccurate</li>
         <li>Add custom CSS.</li>
