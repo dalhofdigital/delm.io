@@ -19,7 +19,6 @@ export default {
   ],
   css: [
     { src: '~/assets/style/app.styl', lang: 'stylus' },
-    { src: 'lightgallery.js/src/css/lightgallery.css', lang: 'css' },
   ],
   /*
   ** Customize the progress bar color
