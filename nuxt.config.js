@@ -14,14 +14,20 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ],
   },
-  plugins: ['~/plugins/vuetify.js'],
+  plugins: [
+    '~/plugins/vuetify.js',
+  ],
   css: [
-    '~/assets/style/app.styl'
+    { src: '~/assets/style/app.styl', lang: 'stylus' },
+    { src: 'lightgallery.js/src/css/lightgallery.css', lang: 'css' },
   ],
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  modules: [
+    ['@nuxtjs/google-analytics', { id: 'UA-56780752-9' }]
+ ],
   /*
   ** Build configuration
   */

@@ -4,12 +4,13 @@
       <v-container class="pa-0">
         <v-toolbar flat color="indigo darken-2" dark height="64">
           <nuxt-link to="/" class="d-flex align-center" style="min-width:42px;min-height:42px;width:42px;height:42px">
-            <img src="/logo.png" alt="Delm" class="d-inline-block" style="max-width:100%">
+            <img src="/images/logo.png" alt="Delm" class="d-inline-block" style="max-width:100%">
           </nuxt-link>
-          <v-toolbar-title class="subheading font-weight-medium">Delm</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn flat round to="/docs">Documentation</v-btn>
-          <v-btn color="success" round href="https://apps.shopify.com/delm">Open in Shopify App Store</v-btn>
+          <v-btn flat round to="/support">Support</v-btn>
+          <v-btn flat round to="/docs">Docs</v-btn>
+          <v-btn flat round href="https://app.delm.io">Login</v-btn>
+          <v-btn color="yellow" light round href="https://apps.shopify.com/delm">Start using Delm</v-btn>
         </v-toolbar>
       </v-container>
     </div>
@@ -32,7 +33,7 @@
   export default {
     data () {
       return {
-        title: 'Vuetify.js'
+        title: 'Delm'
       }
     }
   }

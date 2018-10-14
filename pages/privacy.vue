@@ -11,7 +11,6 @@
 
       <ul class="mb-4">
         <li>Read products</li>
-        <li>Read collections</li>
         <li>Read and write script tags</li>
       </ul>
 
