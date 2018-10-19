@@ -78,7 +78,7 @@ export default {
         },
         {
           title: 'Flexible and multilingual templates',
-          description: 'Flexible components for delivery date, delivery date range and dispatch countdown. Craft your own templates or use one of your pre built templates. Currently available in 6 languages (English, Spanish, German, French, Dutch and Portuguese).',
+          description: 'Flexible components for delivery date, delivery date range and dispatch countdown. Craft your own templates or use one of your pre built templates. Currently available in 7 languages (English, Spanish, German, French, Dutch, Portuguese and Italian).',
           image: '/images/features/templates.png',
         },
         {
