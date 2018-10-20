@@ -10,6 +10,8 @@
             <h2 class="mb-3">Topics</h2>
             <ul>
                 <li><nuxt-link to="/docs/fast-load">Fast load</nuxt-link></li>
+                <!-- <li><nuxt-link to="/docs/google-optimize">How to setup an A/B test for Delm with Google Optimize</nuxt-link></li> -->
+                <li><nuxt-link to="/docs/uninstall">Uninstalling Delm</nuxt-link></li>
             </ul>
         </v-container>
     </div>

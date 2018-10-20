@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container>
-      <h1>Delm fast load</h1>
+      <h1 class="mb-2">Delm fast load</h1>
       <p>If fast load is disabled, we automatically inject a JavaScript file via the Shopify ScriptTag API to your store. Because all ScriptTags are being loaded at the very end of page load, you might experience a slight delay before the app gets visible.</p>
 
       <h2 class="mb-2">How to enable fast load</h2>
