@@ -55,7 +55,7 @@
       <v-container class="white--text" grid-list-md>
         <v-layout column align-center justify-center>
           <v-flex>
-            <h2>What are you waiting for? Start your free 14-day trial today!</h2>
+            <h2>What are you waiting for? Start your free 7-day trial today!</h2>
           </v-flex>
           <v-flex>
             <v-btn round large color="yellow" light href="https://apps.shopify.com/delm">Try Delm for free</v-btn>
