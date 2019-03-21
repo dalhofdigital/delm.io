@@ -19,21 +19,21 @@
 
 <script>
 export default {
-  data () {
-    return {
-        //   
-    }
-  },
+  layout: 'docs',
   head () {
     return {
       title: 'Delm documentation',
       meta: [
-        { 
-          hid: 'description', 
-          name: 'description', 
+        {
+          hid: 'description',
+          name: 'description',
           content: `With Delivery Message, you can add messages like "Want it tomorrow? Order within 2 hrs, 32 mins and 21 secs." to your product pages.`
         }
       ]
+    }
+  },
+  data () {
+    return {
     }
   }
 }
