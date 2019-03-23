@@ -15,9 +15,7 @@
       <img src="/images/logo.png" alt="Delm" class="d-inline-block" style="max-width:100%">
     </nuxt-link>
     <v-spacer></v-spacer>
-    <v-btn flat round to="/support">Support</v-btn>
-    <v-btn flat round to="/docs">Docs</v-btn>
-    <v-btn flat round href="https://app.delm.io">Login</v-btn>
+    <v-btn flat to="/docs">Docs</v-btn>
     <v-btn color="primary" href="https://apps.shopify.com/delm">Start using Delm</v-btn>
   </v-toolbar>
 </template>
@@ -68,7 +66,6 @@ export default {
 
 <style lang="scss">
 #nav {
-  position: relative;
   z-index: 10;
   &.shadow:after {
     bottom: -5px;

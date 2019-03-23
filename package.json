@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.2.0",
-    "nuxt": "^2.5",
+    "core-js": "^2.6.5",
+    "nuxt": "^2.5.1",
     "vuetify": "^1.5"
   },
   "devDependencies": {
+    "@nuxtjs/markdownit": "^1.2.3",
     "acorn": "^6.1.1",
     "acorn-dynamic-import": "^4.0.0",
     "babel-eslint": "^7.2.3",

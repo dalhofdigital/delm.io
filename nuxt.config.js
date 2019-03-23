@@ -4,7 +4,7 @@ const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 export default {
   mode: 'spa',
   head: {
-    title: 'delm.io',
+    title: 'Delm - Shipping info for Shopify',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -18,13 +18,11 @@ export default {
   plugins: [
     '~/plugins/vuetify.js'
   ],
-  // css: [
-  //   { src: '~/assets/style/app.styl', lang: 'stylus' }
-  // ],
   transition: '',
   loading: { color: '#3B8070' },
   modules: [
-    ['@nuxtjs/google-analytics', { id: 'UA-56780752-9' }]
+    ['@nuxtjs/google-analytics', { id: 'UA-56780752-9' }],
+    '@nuxtjs/markdownit'
   ],
   build: {
     extractCSS: true,

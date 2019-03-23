@@ -2,7 +2,7 @@
   <div class="home">
     <div style="position:relative;overflow:hidden">
       <v-container>
-        <v-layout row wrap align-center justify-center class="py-5">
+        <v-layout row wrap align-center justify-center>
           <v-flex sm6>
             <div class="mb-4">
               <h1 class="mb-3">Estimated delivery dates for your Shopify product pages</h1>
@@ -24,7 +24,7 @@
               </v-layout>
             </div>
             <v-layout row>
-              <v-flex shrink class="mr-3">
+              <v-flex shrink>
                 <v-btn
                   href="https://apps.shopify.com/delm"
                   color="primary"
@@ -34,6 +34,15 @@
                   Try Delm for free
                 </v-btn>
               </v-flex>
+              <v-flex shrink class="mx-3">
+                <v-btn
+                  :to="{ name: 'docs' }"
+                  large
+                  class="ma-0"
+                >
+                  Get started
+                </v-btn>
+              </v-flex>
               <v-flex shrink>
                 <v-btn
                   href="https://demo.delm.io/products/demo-1"
@@ -41,13 +50,11 @@
                   flat
                   class="ma-0"
                 >
-                  Example product page
+                  Demo
                 </v-btn>
               </v-flex>
             </v-layout>
-            <div class="mt-4 mb-3">
-            </div>
-            <p class="mb-0">Only available for Shopify users</p>
+            <p class="mt-3 mb-0">Only available for Shopify users</p>
           </v-flex>
           <v-flex
             v-if="$vuetify.breakpoint.smAndUp"
@@ -92,18 +99,16 @@
       </v-layout>
     </v-container>
 
-    <div class="indigo darken-2">
-      <v-container class="" grid-list-md>
-        <v-layout column align-center justify-center>
-          <v-flex>
-            <h2>What are you waiting for? Start your free 7-day trial today!</h2>
-          </v-flex>
-          <v-flex>
-            <v-btn round large color="primary" light href="https://apps.shopify.com/delm">Try Delm for free</v-btn>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </div>
+    <v-container grid-list-md>
+      <v-layout column align-center justify-center>
+        <v-flex>
+          <h2>What are you waiting for?</h2>
+        </v-flex>
+        <v-flex>
+          <v-btn large color="primary" href="https://apps.shopify.com/delm">Try Delm for free</v-btn>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
@@ -127,23 +132,23 @@ export default {
       ],
       features: [
         {
-          title: 'Support for multiple countries',
-          description: 'Country based settings for delivery time, deliverable days and language. In order to provide your customers with accurate estimates, we automatically match the countries of your customers with a delivery area. We use GeoLite2 data created by MaxMind to locate visitors.',
+          title: 'Delivery areas',
+          description: 'Configuration based on visitor location. In order to provide your visitors with accurate estimates, we automatically match their country and region with a delivery area.',
           image: '/images/features/delivery-areas.png'
         },
         {
-          title: 'Flexible and multilingual templates',
-          description: 'Flexible components for delivery date, delivery date range and dispatch countdown. Craft your own templates or use one of your pre built templates. Currently available in 7 languages (English, Spanish, German, French, Dutch, Portuguese and Italian).',
+          title: 'Flexible and multilingual shipping info',
+          description: 'Flexible components for delivery date, delivery date range and dispatch countdown. Craft your own templates or use one of your pre built templates.',
           image: '/images/features/templates.png'
         },
         {
-          title: 'Product based settings',
-          description: 'Hide Delm for specific products. Extend the dispatch date. Extend the delivery date. Override working days and dispatch times.',
+          title: 'Product overrides',
+          description: 'Hide the shipping info for specific products or change their delivery conditions. Products are able to override delivery areas. This is helpful if you have products with different lead times.',
           image: '/images/features/product-settings.png'
         },
         {
           title: 'Holidays',
-          description: 'Exclude days or override dispatch times. Add global holidays or delivery area specific holidays.',
+          description: 'Easily manage business holidays.',
           image: '/images/features/holidays.png'
         }
       ]
@@ -151,7 +156,7 @@ export default {
   },
   head () {
     return {
-      title: 'Delm for Shopify',
+      title: 'Delm - Shipping info for Shopify',
       meta: [
         {
           hid: 'description',
