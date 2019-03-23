@@ -18,7 +18,7 @@
     <v-btn flat round to="/support">Support</v-btn>
     <v-btn flat round to="/docs">Docs</v-btn>
     <v-btn flat round href="https://app.delm.io">Login</v-btn>
-    <v-btn color="primary" round href="https://apps.shopify.com/delm">Start using Delm</v-btn>
+    <v-btn color="primary" href="https://apps.shopify.com/delm">Start using Delm</v-btn>
   </v-toolbar>
 </template>
 

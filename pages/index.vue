@@ -1,16 +1,53 @@
 <template>
-  <div>
+  <div class="home">
     <div style="position:relative;overflow:hidden">
-      <v-container grid-list-xl>
+      <v-container>
         <v-layout row wrap align-center justify-center class="py-5">
           <v-flex sm6>
-            <h1 class="display-1 font-weight-medium mb-4">Estimated delivery dates for your Shopify product pages</h1>
-            <p style="font-size:20px;line-height:28px" class="font-weight-regular mb-2">With Delm, you can easily add messages like <span class="d-block"><strong>Want it tomorrow?</strong> Order within <strong class="indigo--text text--lighten-4">2 hrs, 32 mins and 21 secs</strong>.</span> to your product pages.</p>
-            <div class="mt-4 mb-3">
-              <v-btn large round color="primary" light href="https://apps.shopify.com/delm">Try Delm for free</v-btn>
-              <v-btn large round flat href="https://demo.delm.io/products/demo-1">Example product page</v-btn>
+            <div class="mb-4">
+              <h1 class="mb-3">Estimated delivery dates for your Shopify product pages</h1>
+              <v-layout column class="benefits">
+                <v-flex
+                  v-for="benefit in benefits"
+                  :key="benefit.title"
+                  class="benefit"
+                >
+                  <v-layout row align-center>
+                    <v-flex shrink class="mr-2">
+                      <v-icon color="success">{{ benefit.icon }}</v-icon>
+                    </v-flex>
+                    <v-flex>
+                      {{ benefit.title }}
+                    </v-flex>
+                  </v-layout>
+                </v-flex>
+              </v-layout>
             </div>
-            <p class="subheading mb-0 font-weight-light"> Only available for Shopify.</p>
+            <v-layout row>
+              <v-flex shrink class="mr-3">
+                <v-btn
+                  href="https://apps.shopify.com/delm"
+                  color="primary"
+                  large
+                  class="ma-0"
+                >
+                  Try Delm for free
+                </v-btn>
+              </v-flex>
+              <v-flex shrink>
+                <v-btn
+                  href="https://demo.delm.io/products/demo-1"
+                  large
+                  flat
+                  class="ma-0"
+                >
+                  Example product page
+                </v-btn>
+              </v-flex>
+            </v-layout>
+            <div class="mt-4 mb-3">
+            </div>
+            <p class="mb-0">Only available for Shopify users</p>
           </v-flex>
           <v-flex
             v-if="$vuetify.breakpoint.smAndUp"
@@ -74,6 +111,20 @@
 export default {
   data () {
     return {
+      benefits: [
+        {
+          title: 'Better customer experience',
+          icon: 'check_circle'
+        },
+        {
+          title: 'More trust, more sales',
+          icon: 'verified_user'
+        },
+        {
+          title: 'Carefully crafted app',
+          icon: 'code'
+        }
+      ],
       features: [
         {
           title: 'Support for multiple countries',
@@ -113,9 +164,21 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.hero-image {
-  max-width: 400px;
-  opacity: .5;
+<style lang="scss">
+.home {
+  .hero-image {
+    max-width: 400px;
+    opacity: .5;
+  }
+  .benefits {
+    font-size: 20px;
+    .benefit {
+      color: #232323;
+      margin-bottom: 5px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 </style>

@@ -12,15 +12,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Merriweather+Sans:400,700|Material+Icons' }
     ]
   },
   plugins: [
     '~/plugins/vuetify.js'
   ],
-  css: [
-    { src: '~/assets/style/app.styl', lang: 'stylus' }
-  ],
+  // css: [
+  //   { src: '~/assets/style/app.styl', lang: 'stylus' }
+  // ],
   transition: '',
   loading: { color: '#3B8070' },
   modules: [

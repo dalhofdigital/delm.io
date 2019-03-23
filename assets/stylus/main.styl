@@ -1,6 +1,6 @@
 // Import and define Vuetify color theme
 // https://vuetifyjs.com/en/style/colors
-@require '~vuetify/src/stylus/settings/_colors'
+@require '~vuetify/src/stylus/settings/_colors.styl'
 $theme := {
   primary:     $blue.darken-2
   accent:      $blue.accent-2
@@ -10,12 +10,14 @@ $theme := {
   error:       $red.accent-4
   success:     $green.lighten-2
 }
+@require './_variables.styl'
+@require '~vuetify/src/stylus/main.styl'
 
-// Import Vuetify styling
-@require '~vuetify/src/stylus/main'
+.v-btn 
+  font-family: $button-font-family
+  // &:not(.v-btn--round)
+  //   border-radius: 6px
 
 #app
   background-color: #fff
 
-.page
-  @extend .fade-transition
