@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="docs">
     <DelmNavbar />
     <v-navigation-drawer
       value="true"
@@ -8,16 +8,15 @@
       fixed
       clipped
       floating
-      width="250"
       id="sidebar"
     >
-      <div >
-        <v-list dense subheader>
+      <div>
+        <v-list subheader>
           <div
             v-for="group in navigation.groups"
             :key="group.title"
           >
-            <v-subheader class="font-weight-bold">{{ group.title }}</v-subheader>
+            <v-subheader class="font-weight-bold grey--text text--darken-3">{{ group.title }}</v-subheader>
             <v-list-tile
               v-for="item in group.items"
               :key="item.title"
@@ -25,10 +24,10 @@
               :exact="item.exact"
               :nuxt="true"
               ripple
-              color="grey"
+              color="grey darken-1"
             >
               <v-list-tile-content>
-                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                <v-list-tile-title style="font-size:14px">{{ item.title }}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
           </div>
@@ -74,6 +73,11 @@ export default {
                 title: 'Frequently asked questions',
                 route: 'docs-faq',
                 exact: true
+              },
+              {
+                title: 'Support',
+                route: 'docs-support',
+                exact: true
               }
             ]
           },
@@ -102,7 +106,7 @@ export default {
               },
               {
                 title: 'Examples',
-                route: 'docs-delivey-areas-examples',
+                route: 'docs-delivery-areas-examples',
                 exact: true
               },
               {
@@ -144,7 +148,7 @@ export default {
                 title: 'Uninstalling Delm',
                 route: 'docs-guides-uninstall-delm',
                 exact: true
-              },
+              }
             ]
           }
         ]

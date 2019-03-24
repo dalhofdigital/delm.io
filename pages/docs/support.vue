@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import content from '@/docs/essentials/what-is-delm.md'
+import content from '@/docs/essentials/support.md'
 
 export default {
   layout: 'docs',

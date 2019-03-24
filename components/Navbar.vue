@@ -15,8 +15,8 @@
       <img src="/images/logo.png" alt="Delm" class="d-inline-block" style="max-width:100%">
     </nuxt-link>
     <v-spacer></v-spacer>
-    <v-btn flat to="/docs">Docs</v-btn>
-    <v-btn color="primary" href="https://apps.shopify.com/delm">Start using Delm</v-btn>
+    <v-btn flat to="/docs">Learn</v-btn>
+    <v-btn color="primary" href="https://apps.shopify.com/delm">Install Delm</v-btn>
   </v-toolbar>
 </template>
 
