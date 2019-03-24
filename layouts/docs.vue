@@ -35,7 +35,9 @@
       </div>
     </v-navigation-drawer>
     <v-content>
-      <nuxt />
+      <v-container class="py-0 ">
+        <nuxt />
+      </v-container>
     </v-content>
 
     <DelmFooter/>
