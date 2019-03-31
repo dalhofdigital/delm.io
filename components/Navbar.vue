@@ -66,10 +66,10 @@ export default {
 
 <style lang="scss">
 #nav {
-  z-index: 10;
+  z-index: 11;
   &.shadow:after {
-    bottom: -5px;
-    box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, .12);
+    bottom: -3px;
+    box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, .08);
     content: "";
     height: 5px;
     left: 0px;

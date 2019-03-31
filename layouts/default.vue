@@ -4,7 +4,6 @@
     <v-content>
       <nuxt />
     </v-content>
-
     <DelmFooter />
   </v-app>
 </template>

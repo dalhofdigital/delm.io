@@ -158,7 +158,8 @@ export default {
 }
 </script>
 
-<style scss>
+<style lang"scss">
+.docs {
   #sidebar {
     padding-top: 16px;
     border-right: solid 1px #eee;
@@ -166,4 +167,8 @@ export default {
   .container {
     max-width: 1200px !important;
   }
-</style>
+  code {
+    font-size: 100% !important;
+  }
+}
+</sty>
