@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import content from '@/docs/essentials/what-is-delm.md'
+import content from '@/docs/delivery-areas/examples.md'
 
 export default {
   layout: 'docs',

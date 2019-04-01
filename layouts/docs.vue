@@ -35,11 +35,10 @@
       </div>
     </v-navigation-drawer>
     <v-content>
-      <v-container class="py-0 ">
+      <v-container class="py-0">
         <nuxt />
       </v-container>
     </v-content>
-
     <DelmFooter/>
   </v-app>
 </template>
@@ -160,7 +159,7 @@ export default {
 }
 </script>
 
-<style lang"scss">
+<style lang="scss">
 .docs {
   #sidebar {
     padding-top: 16px;
@@ -169,8 +168,26 @@ export default {
   .container {
     max-width: 1200px !important;
   }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h1, h2, h3 {
+    padding-bottom: 10px;
+    border-bottom: solid 1px #eee;
+  }
   code {
     font-size: 100% !important;
+    font-weight: 500;
+    box-shadow: none;
   }
 }
-</sty>
+</style>
