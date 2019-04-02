@@ -33,6 +33,7 @@ export default {
       },
       use: [
         [require('markdown-it-anchor'), {
+          level: 2,
           slugify:  slugify,
           permalink: true,
           permalinkSymbol: '#'
