@@ -1,5 +1,6 @@
 const nodeExternals = require('webpack-node-externals')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+const slugify = (s) => encodeURIComponent(String(s).trim().toLowerCase().replace(/[^a-zA-Z ]/g, '').replace(/\s+/g, '-'))
 
 export default {
   mode: 'spa',
@@ -29,7 +30,14 @@ export default {
       highlight: (code, lang) => {
         const Prism = require('prismjs')
         return Prism.highlight(code, Prism.languages[lang] || Prism.languages.markup)
-      }
+      },
+      use: [
+        [require('markdown-it-anchor'), {
+          slugify:  slugify,
+          permalink: true,
+          permalinkSymbol: '#'
+        }]
+      ]
     }]
   ],
   build: {
@@ -52,6 +60,16 @@ export default {
               whitelist: [/^vuetify/]
             })
           ]
+        }
+      }
+    }
+  },
+  router: {
+    scrollBehavior (to) {
+      if (to.hash && document.querySelector(to.hash)) {
+        return {
+          selector: to.hash,
+          offset: { y: -58 }
         }
       }
     }
