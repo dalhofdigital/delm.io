@@ -17,3 +17,9 @@ Tell us your working days, cut-off times and the position, where you want to dis
 ...
 
 ## Create overrides for products with special delivery times
+
+```js
+var hatJeromeSeinTagesZielErreicht = function (anzahlDerARAMS) {
+    return anzahlDerARAMS >= 15;
+ }
+```

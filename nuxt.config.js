@@ -22,7 +22,15 @@ export default {
   loading: { color: '#3B8070' },
   modules: [
     ['@nuxtjs/google-analytics', { id: 'UA-56780752-9' }],
-    '@nuxtjs/markdownit'
+    ['@nuxtjs/markdownit', {
+      html: true,
+      linkify: true,
+      breaks: true,
+      highlight: (code, lang) => {
+        const Prism = require('prismjs')
+        return Prism.highlight(code, Prism.languages[lang] || Prism.languages.markup)
+      }
+    }]
   ],
   build: {
     extractCSS: true,
