@@ -209,5 +209,23 @@ export default {
     font-weight: 500;
     box-shadow: none;
   }
+  table {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+    border-spacing: 0;
+    thead {
+      background-color: #f0f0f0;
+    }
+    th, td {
+      padding: 18px 25px;
+      border: 0;
+      border-spacing: 0;
+    }
+    tbody tr {
+        background-color: rgba(0, 0, 0, 0.012);
+      &:nth-child(odd) {
+        background-color: #fff;
+      }
+    }
+  }
 }
 </style>

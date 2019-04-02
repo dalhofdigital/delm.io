@@ -1,5 +1,4 @@
-Delm in a nutshell
--------------
+# Delm in a nutshell
 
 **Delm is a Shopify application** that allows you to add **estimated delivery dates** like "Want it tomorrow? Order within 3 hrs and 42 min" to your **product pages**.
 
