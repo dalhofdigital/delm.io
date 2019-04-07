@@ -199,7 +199,7 @@ export default {
     padding-right: .8rem;
     text-decoration: none;
     color: #ccc;
-    font-weight: 500;
+    font-weight: 300;
     &:hover {
       color: #aaa;
     }
