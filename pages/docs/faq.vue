@@ -14,12 +14,12 @@ export default {
   },
   head () {
     return {
-      title: 'Delm documentation - Fast load',
+      title: 'Enable fast load',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: `With Delivery Message, you can add messages like "Want it tomorrow? Order within 2 hrs, 32 mins and 21 secs." to your product pages.`
+          content: `Learn how to enable the fast load option in Delm.`
         }
       ]
     }

@@ -4,51 +4,50 @@
 
 In Delm, there are three shipping info *types*.
 
-### Type: Default
+| Type                | Used when                                    |
+| :------------------ | :------------------------------------------- |
+| Default             | Calculated delivery date is **not tomorrow** |
+| Delivery time range | Calculated delivery date is a **date range** |
+| Next day delivery   | Calculated delivery date is **tomorrow**     |
 
-> Active when the calculated delivery date is **not tomorrow**.
-
-#### Example
-
-```html
-<div>asdasd</div>
-```
-
-### Type: Delivery time range
-
-> Active when the calculated delivery date is a **date range**.
-
-#### Example
+### Default example
 
 ```html
-…
+Want it {{date type="delivery" format="[dddd], [mmm]. [dd]"}}? Order within {{countdown hide_zero_values="true" unit_format="long" show_seconds="4_hours"}}.
+
+>> Want it Thursday, Apr. 11? Order within 19 hours and 29 minutes.
 ```
 
-
-### Type: Next day delivery
-
-> Active when the calculated delivery date is **tomorrow**.
-
-#### Example
+### Delivery time range example
 
 ```html
-…
+Delivery between {{date type="delivery_min" format="[ddd]., [mmm]. [dd]"}} and {{date type="delivery_max" format="[ddd]., [mmm]. [dd]"}}. Order within{{countdown hide_zero_values="true" unit_format="short" show_seconds="4_hours"}}.
+
+>> Delivery between Fri., Apr. 12 and Mon., Apr. 15. Order within 19 hrs and 17 min.
 ```
 
-## Shipping info editor
+### Next day delivery example
 
-### {{date}} variable
+```html
+Want it tomorrow, {{date type="delivery" format="[mmm]. [dd]"}}? Order within {{countdown hide_zero_values="true" unit_format="short" show_seconds="4_hours"}}.
 
-#### Options
+>> Want it tomorrow, Apr. 11? Order within 1 day, 2 hrs and 43 min.
+```
 
+## Variables
 
-| Option   | Description                                                                                                            | Required? |
-| :------- | :--------------------------------------------------------------------------------------------------------------------- | :-------- |
-| `type`   | `delivery`, `delivery_min` (only available in date range), `delivery_max` (only available in date range) or `dispatch` | Yes       |
-| `format` | Date format. See options below.                                                                                        | Yes       |
+### Date variable - {{date}}
 
+`{{date}}` renders a delivery date or dispatch date.
 
-#### Date format options
+#### Date options
+
+| Option   | Description                                                                                                            | Is required? |
+| :------- | :--------------------------------------------------------------------------------------------------------------------- | :----------- |
+| `type`   | `delivery`, `delivery_min` (only available in date range), `delivery_max` (only available in date range) or `dispatch` | **Yes**      |
+| `format` | Date format. See options below.                                                                                        | **Yes**      |
+
+#### Date format options - {{date format="`[dddd], [mmm]. [dd]`"}}
 
 | Input    | Example | Description                                            |
 | :------- | :------ | :----------------------------------------------------- |
@@ -61,18 +60,41 @@ In Delm, there are three shipping info *types*.
 | `[mmm]`  | Jan     | First three characters of month name                   |
 | `[mm]`   | 01      | Month with trailing zero from 01 to 12                 |
 | `[m]`    | 1       | Month from 1 to 12                                     |
-| `[yyyy]` | 2018    | 4 digit year                                           |
-| `[yy]`   | 18      | 2 digit year                                           |
+| `[yyyy]` | 2019    | 4 digit year                                           |
+| `[yy]`   | 19      | 2 digit year                                           |
 
-#### Example
+#### Date variable example
 
-```
+```html
 {{date type="delivery" format="[dddd], [mmm]. [dd]"}}
 
-Output: Thursday, Apr. 04 
+>> Saturday, Apr. 20
 ```
 
+### Countdown variable - {{countdown}}
 
-### {{countdown}} variable
+`{{countdown}}` renders a countdown that counts down to the next cut-off date. The cut-off countdown helps you to create urgency without being too pushy.
 
-#### Options
+| Option             | Description                                                                                       | Is required? |
+| :----------------- | :------------------------------------------------------------------------------------------------ | :----------- |
+| `hide_zero_values` | `true` or `false`. Hide or show zero values. Example: 20 min 20 sec => 0 days 0 hrs 20 min 20 sec | **Yes**      |
+| `unit_format`      | `long` (default) or `short` Example: minute => min, hour => hr, ...                               | No           |
+| `show_seconds`     | `always` (default), `never`, `4_hours`, `3_hours`, `2_hours` or `1_hour`                          | No           |
+| `separator`        | Change unit separator. Example: 1 day`,` 2 hrs`,` 20 min and 10 sec                               | No           |
+| `last_separator`   | Change separator for last unit. Example: 2 hrs, 20 min, `and` 10 sec                              | No           |
+| `day`              | Override translation for "day"                                                                    | No           |
+| `days`             | Override translation for "days"                                                                   | No           |
+| `hour`             | Override translation for "hour"                                                                   | No           |
+| `hours`            | Override translation for "hours"                                                                  | No           |
+| `minute`           | Override translation for "minute"                                                                 | No           |
+| `minutes`          | Override translation for "minutes"                                                                | No           |
+| `second`           | Override translation for "second"                                                                 | No           |
+| `seconds`          | Override translation for "seconds"                                                                | No           |
+
+#### Countdown variable example
+
+```html
+{{countdown hide_zero_values="true" unit_format="long" show_seconds="4_hours"}}
+
+>> 4 hours, 20 minutes and 13 seconds
+```

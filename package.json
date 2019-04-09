@@ -13,6 +13,7 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.2.0",
     "core-js": "^2.6.5",
+    "medium-zoom": "^1.0.4",
     "nuxt": "^2.5.1",
     "prismjs": "^1.16.0",
     "vuetify": "^1.5.9"

@@ -1,6 +1,6 @@
+import mediumZoom from 'medium-zoom'
 const nodeExternals = require('webpack-node-externals')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
-const slugify = (s) => encodeURIComponent(String(s).trim().toLowerCase().replace(/[^a-zA-Z ]/g, '').replace(/\s+/g, '-'))
 
 export default {
   mode: 'spa',
@@ -33,8 +33,8 @@ export default {
       },
       use: [
         [require('markdown-it-anchor'), {
-          level: 2,
-          slugify:  slugify,
+          level: 1,
+          slugify: (s) => encodeURIComponent(String(s).trim().toLowerCase().replace(/[^a-zA-Z ]/g, '').replace(/\s+/g, '-')),
           permalink: true,
           permalinkSymbol: '#'
         }]
@@ -73,6 +73,9 @@ export default {
           offset: { y: -58 }
         }
       }
+    },
+    afterEach () {
+      mediumZoom(document.querySelectorAll('.docs img'))
     }
   }
 }
