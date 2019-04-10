@@ -1,23 +1,21 @@
 <template>
-  <v-content>
-    <div class="footer">
-      <v-container class="px-0 py-2">
-        <div class="footer-links">
-          <div
-            v-for="link in links"
-            :key="link.title"
-            class="footer-link"
+  <div class="footer">
+    <v-container class="px-0 py-2">
+      <div class="footer-links">
+        <div
+          v-for="link in links"
+          :key="link.title"
+          class="footer-link"
+        >
+          <nuxt-link
+            :to="{ name: link.routeName }"
           >
-            <nuxt-link
-              :to="{ name: link.routeName }"
-            >
-              {{ link.title }}
-            </nuxt-link>
-          </div>
+            {{ link.title }}
+          </nuxt-link>
         </div>
-      </v-container>
-    </div>
-  </v-content>
+      </div>
+    </v-container>
+  </div>
 </template>
 
 <script>

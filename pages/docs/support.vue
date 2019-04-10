@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import content from '@/docs/essentials/support.md'
+import content from '@/docs/support.md'
 
 export default {
   layout: 'docs',

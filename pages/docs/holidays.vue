@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import content from '@/docs/delivery-areas/introduction.md'
+import content from '@/docs/holidays.md'
 
 export default {
   layout: 'docs',

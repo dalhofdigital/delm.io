@@ -16,7 +16,7 @@
             v-for="group in navigation.groups"
             :key="group.title"
           >
-            <v-subheader class="font-weight-bold grey--text text--darken-3">{{ group.title }}</v-subheader>
+            <v-subheader class="subheading font-weight-bold grey--text text--darken-3">{{ group.title }}</v-subheader>
             <v-list-tile
               v-for="item in group.items"
               :key="item.title"
@@ -27,14 +27,14 @@
               color="grey darken-1"
             >
               <v-list-tile-content>
-                <v-list-tile-title style="font-size:14px">{{ item.title }}</v-list-tile-title>
+                <v-list-tile-title style="font-size:16px">{{ item.title }}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
           </div>
         </v-list>
       </div>
     </v-navigation-drawer>
-    <v-content>
+    <v-content class="pl-0">
       <v-container class="docs">
         <nuxt />
       </v-container>
@@ -72,6 +72,31 @@ export default {
                 exact: true
               },
               {
+                title: 'Shipping info',
+                route: 'docs-shipping-info',
+                exact: true
+              },
+              {
+                title: 'Delivery areas',
+                route: 'docs-delivery-areas',
+                exact: true
+              },
+              {
+                title: 'Product overrides',
+                route: 'docs-product-overrides',
+                exact: true
+              },
+              {
+                title: 'Holidays',
+                route: 'docs-holidays',
+                exact: true
+              }
+            ]
+          },
+          {
+            title: 'Help',
+            items: [
+              {
                 title: 'Frequently asked questions',
                 route: 'docs-faq',
                 exact: true
@@ -84,71 +109,16 @@ export default {
             ]
           },
           {
-            title: 'Shipping info',
-            items: [
-              {
-                title: 'Introduction',
-                route: 'docs-shipping-info',
-                exact: true
-              },
-              {
-                title: 'Examples',
-                route: 'docs-shipping-info-examples',
-                exact: true
-              }
-            ]
-          },
-          {
-            title: 'Delivey areas',
-            items: [
-              {
-                title: 'Introduction',
-                route: 'docs-delivery-areas',
-                exact: true
-              },
-              {
-                title: 'Examples',
-                route: 'docs-delivery-areas-examples',
-                exact: true
-              },
-              {
-                title: 'How to test your delivery areas',
-                route: 'docs-delivery-areas-how-to-test',
-                exact: true
-              }
-            ]
-          },
-          {
-            title: 'Product overrides',
-            items: [
-              {
-                title: 'Introduction',
-                route: 'docs-product-overrides',
-                exact: true
-              }
-            ]
-          },
-          {
-            title: 'Holidays',
-            items: [
-              {
-                title: 'Introduction',
-                route: 'docs-holidays',
-                exact: true
-              }
-            ]
-          },
-          {
             title: 'Guides',
             items: [
               {
                 title: 'Enable fast load',
-                route: 'docs-guides-fast-load',
+                route: 'docs-fast-load',
                 exact: true
               },
               {
                 title: 'Uninstall Delm',
-                route: 'docs-guides-uninstall-delm',
+                route: 'docs-uninstall-delm',
                 exact: true
               }
             ]
@@ -175,13 +145,12 @@ export default {
   border-right: solid 1px #eee;
 }
 .docs {
-  max-width: 1080px !important;
+  max-width: 800px !important;
   font-size: 16px;
   line-height: 1.5;
   h1 {
     padding-bottom: 10px;
     font-size: 28px;
-    border-bottom: solid 1px #ddd;
   }
   h2 {
     padding-bottom: 10px;
@@ -218,12 +187,12 @@ export default {
     }
   }
   code {
-    background-color: #444;
+    background-color: #eee;
     border-radius: 3px;
-    font-size: 85%;
+    font-size: 0.8em;
     margin: 0;
-    padding: .1em .2em;
-    color: #fff;
+    padding: 1px 0px;
+    color: #1a75d2;
     font-weight: 500;
     box-shadow: none;
   }

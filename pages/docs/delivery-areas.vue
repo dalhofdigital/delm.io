@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import content from '@/docs/guides/fast-load.md'
+import content from '@/docs/delivery-areas.md'
 
 export default {
   layout: 'docs',

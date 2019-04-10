@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import content from '@/docs/shipping-info/examples.md'
+import content from '@/docs/product-overrides.md'
 
 export default {
   layout: 'docs',

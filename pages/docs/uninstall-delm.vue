@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import content from '@/docs/shipping-info/introduction.md'
+import content from '@/docs/uninstall-delm.md'
 
 export default {
   layout: 'docs',
@@ -14,12 +14,12 @@ export default {
   },
   head () {
     return {
-      title: 'Delm documentation - Fast load',
+      title: 'Uninstall Delm',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: `With Delivery Message, you can add messages like "Want it tomorrow? Order within 2 hrs, 32 mins and 21 secs." to your product pages.`
+          content: `Learn how to uninstall Delm.`
         }
       ]
     }
