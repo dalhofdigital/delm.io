@@ -17,7 +17,8 @@ export default {
     ]
   },
   plugins: [
-    '~/plugins/vuetify.js'
+    '~/plugins/vuetify.js',
+    '~/plugins/global.js'
   ],
   transition: '',
   loading: { color: '#3B8070' },
