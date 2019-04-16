@@ -7,4 +7,4 @@
 
 **If you had troubles using Delm, please don't hesitate to [contact us](/docs/support) before uninstalling the app!**
 
-If you had enabled the fast load option, [please undo the made changes](/docs/guides/fast-load).
+If you had enabled the fast load option, [please undo the made changes](/docs/fast-load).

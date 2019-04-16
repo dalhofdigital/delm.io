@@ -2,21 +2,21 @@
   <v-toolbar
     app
     id="nav"
-    :class="{ 'shadow': showShadow }"
     ref="navbar"
     fixed
     flat
     light
     height="58"
-    color="white"
     clipped-left
+    :data-border="showBorder"
   >
     <nuxt-link to="/" class="d-flex align-center" style="min-width:42px;min-height:42px;width:42px;height:42px">
       <img src="/images/logo.png" alt="Delm" class="d-inline-block" style="max-width:100%">
     </nuxt-link>
+    <div class="grey--text text--darken-4 headline" style="padding-left:15px;font-size:20px!important">Delm</div>
     <v-spacer></v-spacer>
     <v-btn flat to="/docs">Learn</v-btn>
-    <v-btn color="primary" href="https://apps.shopify.com/delm">Install Delm</v-btn>
+    <v-btn color="primary" href="https://apps.shopify.com/delm">Try for free</v-btn>
   </v-toolbar>
 </template>
 
@@ -24,15 +24,15 @@
 export default {
   data () {
     return {
-      showShadow: false
+      showBorder: false
     }
   },
   watch: {
     '$route' (to, from) {
       if (!this.isHome(to)) {
-        this.showShadow = true
+        this.showBorder = true
       } else {
-        this.showShadow = false
+        this.showBorder = false
       }
     }
   },
@@ -42,19 +42,19 @@ export default {
     },
     scrollHandler (event) {
       if (!this.isHome(this.$route)) {
-        this.showShadow = true
+        this.showBorder = true
         return
       }
       if (window.scrollY > this.$refs.navbar.$el.clientHeight) {
-        this.showShadow = true
+        this.showBorder = true
       } else {
-        this.showShadow = false
+        this.showBorder = false
       }
     }
   },
   created () {
     if (!this.isHome(this.$route)) {
-      this.showShadow = true
+      this.showBorder = true
     }
     window.addEventListener('scroll', this.scrollHandler)
   },
@@ -67,18 +67,11 @@ export default {
 <style lang="scss">
 #nav {
   z-index: 11;
-  &.shadow:after {
-    bottom: -3px;
-    box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, .08);
-    content: "";
-    height: 5px;
-    left: 0px;
-    opacity: 1;
-    pointer-events: none;
-    position: absolute;
-    right: 0px;
-    width: 100%;
-    z-index: 10;
+  background-color: transparent;
+  transition: none;
+  &[data-border="true"] {
+    background-color: #fff;
+    border-bottom: solid 1px #eee;
   }
 }
 </style>

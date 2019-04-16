@@ -5,23 +5,7 @@
         <v-layout row wrap align-center justify-center>
           <v-flex sm6>
             <div class="mb-4">
-              <h1 class="mb-3">Estimated delivery dates for your Shopify product pages</h1>
-              <v-layout column class="benefits">
-                <v-flex
-                  v-for="benefit in benefits"
-                  :key="benefit.title"
-                  class="benefit"
-                >
-                  <v-layout row align-center>
-                    <v-flex shrink class="mr-2">
-                      <v-icon color="success">{{ benefit.icon }}</v-icon>
-                    </v-flex>
-                    <v-flex>
-                      {{ benefit.title }}
-                    </v-flex>
-                  </v-layout>
-                </v-flex>
-              </v-layout>
+              <h1 class="display-1 font-weight-bold mb-4">Estimated delivery dates for your Shopify product pages</h1>
             </div>
             <v-layout row>
               <v-flex shrink>
@@ -31,7 +15,7 @@
                   large
                   class="ma-0"
                 >
-                  Try Delm for free
+                  Try for free
                 </v-btn>
               </v-flex>
               <v-flex shrink class="mx-3">
@@ -43,29 +27,46 @@
                   Get started
                 </v-btn>
               </v-flex>
-              <v-flex shrink>
-                <v-btn
-                  href="https://demo.delm.io/products/demo-1"
-                  large
-                  flat
-                  class="ma-0"
-                >
-                  Demo
-                </v-btn>
-              </v-flex>
             </v-layout>
-            <p class="mt-3 mb-0">Only available for Shopify users</p>
           </v-flex>
           <v-flex
             v-if="$vuetify.breakpoint.smAndUp"
             shrink
             class="ml-5"  
           >
-            <img class="hero-image" src="/images/hero-image.png" alt="Delm">
           </v-flex>
         </v-layout>
       </v-container>
     </div>
+
+    <v-container class="py-5" grid-list-xl>
+      <div class="text-xs-center mb-4">
+        <h2 style="font-size:28px;font-weight:700">Why you should show estimated delivery dates</h2>
+      </div>
+      <v-layout wrap justify-center align-center>
+        <v-flex md4 class="text-xs-center">
+          <div class="mb-3">
+            <img style="height:160px" src="/images/investing.svg" alt="Delm">
+          </div>
+          <h3 class="mb-2" style="font-size:22px;font-weight:700">Increase conversion rate</h3>
+          <p style="font-size:20px">Convert more visitors into customers by solving a simple question: "When will my order arrive?"</p>
+        </v-flex>
+        <v-flex md4 class="text-xs-center">
+          <div class="mb-3">
+            <img style="height:160px" src="/images/user-flow.svg" alt="Delm">
+          </div>
+          <h3 class="mb-2" style="font-size:22px;font-weight:700">Improve user experience</h3>
+          <p style="font-size:20px">The delivery date is a crucial piece of information. Don't make your visitors leave your product pages.</p>
+        </v-flex>
+        <v-flex md4 class="text-xs-center">
+          <div class="mb-3">
+            <img style="height:160px" src="/images/having-fun.svg" alt="Delm">
+          </div>
+          <h3 class="mb-2" style="font-size:22px;font-weight:700">Reduce support requests</h3>
+          <p style="font-size:20px">Fewer customers will ask you delivery related questions. Invest your precious time in other things.</p>
+        </v-flex>
+      </v-layout>
+    </v-container>
 
     <v-container class="py-5" grid-list-xl>
       <h2 class="mb-5 display-1 font-weight-bold text-xs-center">Delm features</h2>
@@ -95,17 +96,6 @@
             aspect-ratio="1.7"
             class="elevation-20"
           ></v-img>
-        </v-flex>
-      </v-layout>
-    </v-container>
-
-    <v-container grid-list-md>
-      <v-layout column align-center justify-center>
-        <v-flex>
-          <h2>What are you waiting for?</h2>
-        </v-flex>
-        <v-flex>
-          <v-btn large color="primary" href="https://apps.shopify.com/delm">Try Delm for free</v-btn>
         </v-flex>
       </v-layout>
     </v-container>
@@ -161,7 +151,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: `Increase your conversion rate and customer trust by telling your customers when they will get their delivery.`
+          content: `Estimated delivery dates for your Shopify product pages. Higher conversion rate. Better user experience. Reduce support requests.`
         }
       ]
     }
@@ -170,20 +160,4 @@ export default {
 </script>
 
 <style lang="scss">
-.home {
-  .hero-image {
-    max-width: 400px;
-    opacity: .5;
-  }
-  .benefits {
-    font-size: 20px;
-    .benefit {
-      color: #232323;
-      margin-bottom: 5px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
 </style>

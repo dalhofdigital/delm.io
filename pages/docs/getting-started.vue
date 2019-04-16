@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import content from '@/docs/installation.md'
+import content from '@/docs/getting-started.md'
 
 export default {
   layout: 'docs',
@@ -14,7 +14,7 @@ export default {
   },
   head () {
     return {
-      title: 'Delm documentation - Fast load',
+      title: 'Getting starded',
       meta: [
         {
           hid: 'description',

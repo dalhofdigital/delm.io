@@ -34,7 +34,7 @@
         </v-list>
       </div>
     </v-navigation-drawer>
-    <v-content class="pl-0">
+    <v-content>
       <v-container class="docs">
         <nuxt />
       </v-container>
@@ -67,8 +67,8 @@ export default {
                 exact: true
               },
               {
-                title: 'Installation',
-                route: 'docs-installation',
+                title: 'Getting started',
+                route: 'docs-getting-started',
                 exact: true
               },
               {
@@ -97,8 +97,13 @@ export default {
             title: 'Help',
             items: [
               {
-                title: 'Frequently asked questions',
+                title: 'FAQ',
                 route: 'docs-faq',
+                exact: true
+              },
+              {
+                title: 'Troubleshooting',
+                route: 'docs-troubleshooting',
                 exact: true
               },
               {
@@ -134,18 +139,12 @@ export default {
 </script>
 
 <style lang="scss">
-.medium-zoom-overlay {
-  z-index: 100;
-}
-.medium-zoom-image--opened {
-  z-index: 101;
-}
 #sidebar {
   padding-top: 16px;
   border-right: solid 1px #eee;
 }
 .docs {
-  max-width: 800px !important;
+  max-width: 1000px !important;
   font-size: 16px;
   line-height: 1.5;
   h1 {
@@ -188,11 +187,11 @@ export default {
   }
   code {
     background-color: #eee;
-    border-radius: 3px;
+    border-radius: 2px;
     font-size: 0.8em;
     margin: 0;
     padding: 1px 0px;
-    color: #1a75d2;
+    color: #ff5722;
     font-weight: 500;
     box-shadow: none;
   }
@@ -205,6 +204,7 @@ export default {
     overflow-x: auto;
   }
   table {
+    margin-bottom: 15px;
     border-spacing: 0;
     border-collapse: collapse;
     th, td {
@@ -234,6 +234,13 @@ export default {
     margin: 0 auto;
     margin: 15px 0;
     box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+  blockquote {
+    margin-bottom: 16px;
+    margin-top: 0;
+    border-left: .25em solid #dfe2e5;
+    color: #6a737d;
+    padding: 0 1em;
   }
 }
 </style>

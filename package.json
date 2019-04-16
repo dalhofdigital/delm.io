@@ -14,12 +14,12 @@
     "@nuxtjs/google-analytics": "^2.2.0",
     "core-js": "^2.6.5",
     "medium-zoom": "^1.0.4",
-    "nuxt": "^2.5.1",
+    "nuxt": "^2.6.2",
     "prismjs": "^1.16.0",
-    "vuetify": "^1.5.9"
+    "vuetify": "^1.5.12"
   },
   "devDependencies": {
-    "@nuxtjs/markdownit": "^1.2.3",
+    "@nuxtjs/markdownit": "^1.2.4",
     "acorn": "^6.1.1",
     "acorn-dynamic-import": "^4.0.0",
     "babel-eslint": "^7.2.3",
@@ -27,7 +27,7 @@
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import": "^2.17.1",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
@@ -37,7 +37,7 @@
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "vuetify-loader": "^1.2.1",
+    "vuetify-loader": "^1.2.2",
     "webpack": "4.28.4"
   }
 }

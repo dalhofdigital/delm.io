@@ -1,20 +1,27 @@
 <template>
-  <div class="footer">
-    <v-container class="px-0 py-2">
-      <div class="footer-links">
-        <div
-          v-for="link in links"
-          :key="link.title"
-          class="footer-link"
-        >
-          <nuxt-link
-            :to="{ name: link.routeName }"
-          >
-            {{ link.title }}
-          </nuxt-link>
+  <div class="footer mt-5">
+    <v-content class="py-0">
+      <v-container class="px-0 py-5">
+        <div class="text-xs-center mb-3">
+          <a class="d-inline-block" href="https://apps.shopify.com/delm?utm_source=website&utm_medium=footer_app_store_badge">
+            <img style="width: 240px" src="/images/shopify-app-store-black.png" alt="Shopify App Store">
+          </a>
         </div>
-      </div>
-    </v-container>
+        <div class="footer-links">
+          <div
+            v-for="link in links"
+            :key="link.title"
+            class="footer-link"
+          >
+            <nuxt-link
+              :to="{ name: link.routeName }"
+            >
+              {{ link.title }}
+            </nuxt-link>
+          </div>
+        </div>
+      </v-container>
+    </v-content>
   </div>
 </template>
 
@@ -43,14 +50,18 @@ export default {
 
 
 <style lang="scss">
+.footer {
+  background: #f5f5f5;
+}
 .footer-links {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
   .footer-link {
     a {
       display: inline-block;
-      padding: 15px;
+      padding: 5px 15px;
       color: #232323;
       text-decoration: none;
       &:hover {

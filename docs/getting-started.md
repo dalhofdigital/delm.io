@@ -1,11 +1,12 @@
-# Installation
+# Getting Started
 
 The installation process of Delm is pretty straight forward and can be finished within a few minutes.
 
-Please configure the app to your liking before enabling it. Do not hesitate to [contact us](/docs/support) if you have any questions!
+> Please do not hesitate to [get in touch with us](/docs/support) if you have any questions!
 
 ## General settings
 
+![asdasd](/gifs/working-days.gif)
 Tell us your working days, cut-off times and the position, where you want to display the shipping info.
 
 ## Create delivery areas

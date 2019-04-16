@@ -1,4 +1,3 @@
-import mediumZoom from 'medium-zoom'
 const nodeExternals = require('webpack-node-externals')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
@@ -13,7 +12,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Merriweather+Sans:400,700|Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Monda:400,700|Material+Icons' }
     ]
   },
   plugins: [
@@ -70,13 +69,9 @@ export default {
     scrollBehavior (to) {
       if (to.hash && document.querySelector(to.hash)) {
         return {
-          selector: to.hash,
-          offset: { y: -58 }
+          selector: to.hash
         }
       }
-    },
-    afterEach () {
-      mediumZoom(document.querySelectorAll('.docs img'))
     }
   }
 }
