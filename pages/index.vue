@@ -84,8 +84,11 @@
           <v-layout fill-height align-center justify-center>
             <v-flex sm12>
               <div class="d-inline-block">
-                <h3 class="headline font-weight-bold mb-3">{{ feature.title }}</h3>
-                <p style="line-height:26px;font-size:16px" class="grey--text text--darken-2 mb-0">{{ feature.description }}</p>
+                <h3 class="headline font-weight-bold mb-2">{{ feature.title }}</h3>
+                <p style="line-height:26px;font-size:18px" class="grey--text text--darken-2 mb-0">{{ feature.description }}</p>
+                <div class="mt-2">
+                  <v-btn class="ml-0" :to="{ name: feature.routeName }">Learn more</v-btn>
+                </div>
               </div>
             </v-flex>
           </v-layout>
@@ -106,20 +109,6 @@
 export default {
   data () {
     return {
-      benefits: [
-        {
-          title: 'Better customer experience',
-          icon: 'check_circle'
-        },
-        {
-          title: 'More trust, more sales',
-          icon: 'verified_user'
-        },
-        {
-          title: 'Carefully crafted app',
-          icon: 'code'
-        }
-      ],
       features: [
         {
           title: 'Fully customizable shipping info',
