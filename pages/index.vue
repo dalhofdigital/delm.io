@@ -69,7 +69,7 @@
     </v-container>
 
     <v-container class="py-5" grid-list-xl>
-      <h2 class="mb-5 display-1 font-weight-bold text-xs-center">Delm features</h2>
+      <h2 class="mb-5 display-1 font-weight-bold text-xs-center">Key features of Delm</h2>
 
       <v-layout
         v-for="(feature, index) in features"
@@ -122,24 +122,28 @@ export default {
       ],
       features: [
         {
-          title: 'Delivery areas',
-          description: 'Configuration based on visitor location. In order to provide your visitors with accurate estimates, we automatically match their country and region with a delivery area.',
-          image: '/images/features/delivery-areas.png'
+          title: 'Fully customizable shipping info',
+          description: 'Coding skills are nice to have but not required.',
+          image: '/images/features/delivery-areas.png',
+          routeName: 'docs-shipping-info'
         },
         {
-          title: 'Flexible and multilingual shipping info',
-          description: 'Flexible components for delivery date, delivery date range and dispatch countdown. Craft your own templates or use one of your pre built templates.',
-          image: '/images/features/templates.png'
+          title: 'Date calculation based on visitor location',
+          description: 'Allowing you to map simple or complex delivery conditions.',
+          image: '/images/features/templates.png',
+          routeName: 'docs-delivery-areas'
         },
         {
           title: 'Product overrides',
-          description: 'Hide the shipping info for specific products or change their delivery conditions. Products are able to override delivery areas. This is helpful if you have products with different lead times.',
-          image: '/images/features/product-settings.png'
+          description: 'Have products with varying delivery conditions? No problem.',
+          image: '/images/features/product-settings.png',
+          routeName: 'docs-product-overrides'
         },
         {
           title: 'Holidays',
-          description: 'Easily manage business holidays.',
-          image: '/images/features/holidays.png'
+          description: 'Add and manage business holidays with ease.',
+          image: '/images/features/holidays.png',
+          routeName: 'docs-holidays'
         }
       ]
     }

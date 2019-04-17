@@ -34,7 +34,7 @@
         </v-list>
       </div>
     </v-navigation-drawer>
-    <v-content>
+    <v-content id="content">
       <v-container class="docs">
         <nuxt />
       </v-container>

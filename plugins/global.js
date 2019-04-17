@@ -1,4 +1,3 @@
 import Vue from 'vue'
 import mediumZoom from 'medium-zoom'
-
-mediumZoom('.docs img:not(.medium-zoom-image)')
+mediumZoom('#content img:not(.medium-zoom-image)')

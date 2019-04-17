@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <DelmNavbar />
-    <v-content>
+    <v-content id="content">
       <nuxt />
     </v-content>
     <DelmFooter />
