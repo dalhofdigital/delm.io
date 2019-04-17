@@ -4,7 +4,7 @@
 
 In Delm, there are three shipping info *types*.
 
-| Type                | ⚠️ Used when                                 |
+| Type                | ⚠️ When is it used?                          |
 | :------------------ | :------------------------------------------- |
 | Default             | Calculated delivery date is **not tomorrow** |
 | Delivery time range | Calculated delivery date is a **date range** |

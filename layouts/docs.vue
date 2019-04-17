@@ -131,9 +131,6 @@ export default {
         ]
       }
     }
-  },
-  mounted () {
-    mediumZoom('.docs img')
   }
 }
 </script>

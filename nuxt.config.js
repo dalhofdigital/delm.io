@@ -17,7 +17,7 @@ export default {
   },
   plugins: [
     '~/plugins/vuetify.js',
-    '~/plugins/global.js'
+    '~/plugins/mediumzoom.js'
   ],
   transition: '',
   loading: { color: '#3B8070' },

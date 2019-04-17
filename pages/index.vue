@@ -46,21 +46,21 @@
       <v-layout wrap justify-center align-center>
         <v-flex md4 class="text-xs-center">
           <div class="mb-3">
-            <img style="height:160px" src="/images/investing.svg" alt="Delm">
+            <img style="height:160px" src="/images/investing.svg" alt="Delm" class="no-zoom">
           </div>
           <h3 class="mb-2" style="font-size:22px;font-weight:700">Increase conversion rate</h3>
           <p style="font-size:20px">Convert more visitors into customers by solving a simple question: "When will my order arrive?"</p>
         </v-flex>
         <v-flex md4 class="text-xs-center">
           <div class="mb-3">
-            <img style="height:160px" src="/images/user-flow.svg" alt="Delm">
+            <img style="height:160px" src="/images/user-flow.svg" alt="Delm" class="no-zoom">
           </div>
           <h3 class="mb-2" style="font-size:22px;font-weight:700">Improve user experience</h3>
           <p style="font-size:20px">The delivery date is a crucial piece of information. Don't make your visitors leave your product pages.</p>
         </v-flex>
         <v-flex md4 class="text-xs-center">
           <div class="mb-3">
-            <img style="height:160px" src="/images/having-fun.svg" alt="Delm">
+            <img style="height:160px" src="/images/having-fun.svg" alt="Delm" class="no-zoom">
           </div>
           <h3 class="mb-2" style="font-size:22px;font-weight:700">Reduce support requests</h3>
           <p style="font-size:20px">Fewer customers will ask you delivery related questions. Invest your precious time in other things.</p>
@@ -77,7 +77,7 @@
         :reverse="index % 2 === 0"
         row
         wrap
-        class="mb-5"
+        class="mb-5 features"
         justify-space-around
       >
         <v-flex sm5 xs12>
@@ -94,11 +94,7 @@
           </v-layout>
         </v-flex>
         <v-flex sm5 xs12>
-          <v-img 
-            :src="feature.image"
-            aspect-ratio="1.7"
-            class="elevation-20"
-          ></v-img>
+          <img :src="feature.image" :alt="feature.title">
         </v-flex>
       </v-layout>
     </v-container>
@@ -153,4 +149,10 @@ export default {
 </script>
 
 <style lang="scss">
+.features {
+  img {
+    max-width: 100%;
+    box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+}
 </style>
