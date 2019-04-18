@@ -46,7 +46,6 @@
 <script>
 import DelmNavbar from '~/components/Navbar.vue'
 import DelmFooter from '~/components/Footer.vue'
-import mediumZoom from 'medium-zoom'
 
 export default {
   components: {
