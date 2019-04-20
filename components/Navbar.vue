@@ -16,7 +16,7 @@
     <div class="grey--text text--darken-4 headline font-weight-bold" style="padding-left:15px;font-size:20px!important">Delm</div>
     <v-spacer></v-spacer>
     <v-btn flat to="/docs">Learn</v-btn>
-    <v-btn color="primary" href="https://apps.shopify.com/delm">Try for free</v-btn>
+    <v-btn color="primary" href="https://apps.shopify.com/delm">Add to your store</v-btn>
   </v-toolbar>
 </template>
 

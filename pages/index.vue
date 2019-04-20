@@ -5,7 +5,8 @@
         <v-layout row :wrap="$vuetify.breakpoint.sm" align-center justify-center>
           <v-flex md6>
             <div class="mb-4">
-              <h1 style="font-size:34px" class="text-xs-center text-md-left font-weight-bold mb-4">Add estimated delivery dates to your Shopify product pages</h1>
+              <h1 style="font-size:34px" class="mb-1 text-xs-center text-md-left font-weight-bold">Add estimated delivery dates to your Shopify product pages</h1>
+              <p class="mb-4 grey--text text--darken-1" style="font-weight:300;font-size:22px">For just $12/month. Risk free with our 3-day free trial.</p>
             </div>
             <v-layout row :justify-center="$vuetify.breakpoint.smAndDown">
               <v-flex shrink>
@@ -15,7 +16,7 @@
                   large
                   class="ma-0"
                 >
-                  Try for free
+                  Add to your store
                 </v-btn>
               </v-flex>
               <v-flex shrink class="mx-3">
@@ -39,12 +40,14 @@
                 <div class="product-image"></div>
                 <div class="product-info">
                   <div class="product-name">Your Awesome Product Page</div>
-                  <div class="product-price">$7.50 per month</div>
+                  <div class="product-price">$12/month</div>
                   <div class="product-cta">
                     <a href="https://apps.shopify.com/delm">Add to cart</a>
                   </div>
                   <div class="product-shipping-info">
-                    <span class="product-shipping-info-date">Delivery between Mon., Apr. 22 and Thu., April. 25.</span> Order within <span class="product-shipping-info-countdown success--text">20 hrs and 42 min</span>.</div>
+                    <span class="product-shipping-info-date">FREE delivery between <span class="d-inline-block">{{ minDeliveryDate().format('MMM. D') }}</span> and <span class="d-inline-block">{{ maxDeliveryDate().format('MMM. D') }}</span>.</span> Order within <span class="product-shipping-info-countdown success--text">4 hrs and 20 min</span>.
+                  </div>
+                  <div><a style="font-size:0.8em" href="https://demo.delm.io/products/demo-1" target="_blank">Visit our demo store</a></div>
                 </div>
               </div>
             </BrowserMockup>
@@ -55,7 +58,7 @@
 
     <v-container class="py-5" grid-list-xl>
       <div class="text-xs-center mb-3">
-        <h2 style="font-size:30px;font-weight:700">Here is why <span style="color:#439486;display:inline-block;border-bottom:solid 3px #439486;">everyone</span> should show estimated delivery dates:</h2>
+        <h2 style="font-size:28px;font-weight:700"><span style="color:#439486;display:inline-block;border-bottom:solid 3px #439486;">All merchants</span> should add estimated delivery dates to their product pages</h2>
       </div>
       <v-layout wrap justify-center align-center>
         <v-flex md4 class="text-xs-center">
@@ -97,20 +100,21 @@
         justify-center
         align-center
       >
-        <v-flex sm6 xs12>
+        <v-flex sm7 xs12>
           <v-layout justify-center align-center>
             <v-flex shrink>
-              <div style="padding:50px">
+              <div style="max-width:500px">
                 <h3 style="font-size:28px;margin:0;padding:0">{{ feature.title }}</h3>
                 <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0" v-html="feature.description"></p>
-                <div class="mt-2">
-                  <v-btn class="ml-0" color="primary" :to="{ name: feature.routeName }">Learn more</v-btn>
+                <div class="mt-3">
+                  <v-btn class="ml-0" color="primary" href="https://apps.shopify.com/delm">Install</v-btn>
+                  <v-btn class="ml-0" :to="{ name: feature.routeName }">Learn more</v-btn>
                 </div>
               </div>
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex sm6 xs12>
+        <v-flex sm5 xs12>
           <img :src="feature.image" :alt="feature.title">
         </v-flex>
       </v-layout>
@@ -119,6 +123,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 import BrowserMockup from '~/components/BrowserMockup.vue'
 
 export default {
@@ -131,19 +136,19 @@ export default {
         {
           title: 'Fully customizable shipping info',
           description: '<b>Coding skills are</b> nice to have but <b>not required.</b>',
-          image: '/gifs/customize-shipping-info.gif',
+          image: '/images/features/shipping-info.png',
           routeName: 'docs-shipping-info'
         },
         {
-          title: 'Date calculation based on visitor location',
-          description: 'Allowing you to map simple or complex delivery conditions.',
-          image: '/images/features/templates.png',
+          title: 'Location based date calculation',
+          description: 'Map simple or complex delivery conditions. We find the address (country and state / region) of your visitors via their IP address.',
+          image: '/images/features/delivery-areas.png',
           routeName: 'docs-delivery-areas'
         },
         {
           title: 'Product overrides',
           description: 'Have products with varying delivery conditions? No problem.',
-          image: '/images/features/product-settings.png',
+          image: '/images/features/product-overrides.png',
           routeName: 'docs-product-overrides'
         },
         {
@@ -153,6 +158,22 @@ export default {
           routeName: 'docs-holidays'
         }
       ]
+    }
+  },
+  methods: {
+    minDeliveryDate () {
+      const date = moment().add('days', 3)
+      while (date.format('dddd') === 'Saturday' || date.format('dddd') === 'Sunday') {
+        date.add('days', 1)
+      }
+      return date
+    },
+    maxDeliveryDate () {
+      const date = this.minDeliveryDate().clone().add('days', 2)
+      while (date.format('dddd') === 'Saturday' || date.format('dddd') === 'Sunday') {
+        date.add('days', 1)
+      }
+      return date
     }
   },
   head () {

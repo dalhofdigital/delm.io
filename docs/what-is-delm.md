@@ -4,16 +4,16 @@
 
 ## Why you should show estimated delivery dates
 
-We believe that estimated delivery dates are an essential element of every e-commerce store that sells physical products. Visitors are interested about the delivery date before placing an order. 
+We strongly believe that estimated delivery dates are an essential element of every e-commerce store that sells physical products. Visitors are interested about the delivery date before placing an order.
 
-### Better user experience
+### Increase conversion rate ([more](https://web.archive.org/web/20190418222132/https://baymard.com/blog/shipping-speed-vs-delivery-date))
 
-Delm helps you to fill the informational gap that gets created, when you are not adding estimated delivery dates to your store. Your visitor won't have to leave your product page to read your more about your shipping conditions. This makes your overall experience more convenient.
+Convert more visitors into customers by solving a seemingly simple question: "When will my order arrive?"
 
-### More trust, higher conversion rate
+### Improve user experience
 
-Convert more visitors into customers by solving an important mental barrier in their minds: "When will my order arrive?". The cut-off countdown helps to create urgency without being too pushy.
+Don't make your visitors leave your product pages. Design your product pages as convenient as possible.
 
-### Fewer support requests
+### Reduce support requests
 
-Fewer customers will ask you questions about the delivery time, as they can already see this information on your product page.
+Invest your precious time in other things because fewer customers will ask you delivery related questions.
