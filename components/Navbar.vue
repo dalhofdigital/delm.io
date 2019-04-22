@@ -12,7 +12,7 @@
       :data-border="showBorder"
     >
       <v-toolbar-side-icon
-        v-if="window.width <= mobileBreakpoint"
+        v-if="navigation && (window.width <= mobileBreakpoint)"
         @click="drawer = !drawer"
       ></v-toolbar-side-icon>
       <nuxt-link to="/" class="d-flex align-center" style="min-width:42px;min-height:42px;width:42px;height:42px">
@@ -21,7 +21,7 @@
       <div class="grey--text text--darken-4 headline font-weight-bold" style="padding-left:15px;font-size:20px!important">Delm</div>
       <v-spacer></v-spacer>
       <v-btn flat to="/docs">Learn</v-btn>
-      <v-btn color="primary" href="https://apps.shopify.com/delm">Add to your store</v-btn>
+      <v-btn color="primary" href="https://apps.shopify.com/delm">Install</v-btn>
     </v-toolbar>
     <v-navigation-drawer
       v-if="navigation"
