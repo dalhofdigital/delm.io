@@ -33,3 +33,5 @@ Append `?delm_country=US&delm_region=CA` to your product URL to set your current
 ```text
 https://yourstore.com/product/awesome-product?delm_country=US&delm_region=CA
 ```
+
+![Test your delivery area](/gifs/test-delivery-area.gif)
