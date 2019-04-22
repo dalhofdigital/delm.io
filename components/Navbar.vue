@@ -32,6 +32,7 @@
       floating
       id="sidebar"
       :mobile-break-point="mobileBreakpoint"
+      :data-zindex="window.width <= mobileBreakpoint"
     >
       <div>
         <v-list subheader>
@@ -132,5 +133,8 @@ export default {
     background-color: #fff;
     border-bottom: solid 1px #eee;
   }
+}
+#sidebar[data-zindex="true"] {
+  z-index: 12;
 }
 </style>
