@@ -1,0 +1,41 @@
+// Import and define Vuetify color theme
+// https://vuetifyjs.com/en/style/colors
+@require '~vuetify/src/stylus/settings/_colors.styl'
+$theme := {
+  primary:     $blue.darken-2
+  accent:      $blue.accent-2
+  secondary:   $grey.lighten-1
+  info:        $blue.lighten-1
+  warning:     $amber.darken-2
+  error:       $red.accent-4
+  success:     $green.lighten-2
+}
+@require './_variables.styl'
+@require '~vuetify/src/stylus/main.styl'
+@require './_prism.styl'
+
+h1, h2, h3, h4, h5, h6
+  font-family: $heading-font-family
+
+.v-btn 
+  font-family: $button-font-family
+  // &:not(.v-btn--round)
+  //   border-radius: 6px
+
+#app
+  background-color: #fff
+
+
+.medium-zoom-overlay
+  z-index: 100
+
+.medium-zoom--opened .medium-zoom-overlay
+  opacity: 0.75 !important
+
+.medium-zoom-image--opened
+  z-index: 101
+
+.medium-zoom-image.medium-zoom-image--opened
+  box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.3)
+
+  
