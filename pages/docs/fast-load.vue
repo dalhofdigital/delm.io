@@ -14,12 +14,12 @@ export default {
   },
   head () {
     return {
-      title: 'Delm documentation - Fast load',
+      title: 'Enable fast load - Delm',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: `With Delivery Message, you can add messages like "Want it tomorrow? Order within 2 hrs, 32 mins and 21 secs." to your product pages.`
+          content: `If fast load is disabled, we automatically inject a JavaScript file via the Shopify ScriptTag API to your store.`
         }
       ]
     }

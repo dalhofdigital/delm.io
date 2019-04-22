@@ -2,25 +2,41 @@
 
 The installation process of Delm is pretty straight forward and can be finished within a few minutes.
 
+Let's walk through the most important settings to get you started.
+
 > Please do not hesitate to [get in touch with us](/docs/support) if you have any questions!
 
-## General settings
+## App settings
 
-![asdasd](/gifs/working-days.gif)
-Tell us your working days, cut-off times and the position, where you want to display the shipping info.
+* Enable or disable Delm
+* Adjust your working days and daily dispatch times
+* Change shipping info position on your product pages
+* Add custom CSS
 
-## Create delivery areas
+![App settings](/images/docs/app-settings.png)
 
-...
+## [Delivery areas](/docs/delivery-areas)
 
-## Adjust shipping info
+* Configure delivery conditions like delivery time and deliverable days
+* Shipping info language
 
-...
+![Delivery areas](/images/docs/delivery-areas.png)
 
-## Create overrides for products with special delivery times
+## [Shipping info](/docs/shipping-info)
 
-```js
-var hatJeromeSeinTagesZielErreicht = function (anzahlDerARAMS) {
-    return anzahlDerARAMS >= 15;
- }
-```
+* Edit the content of your shipping info
+
+![Shipping info](/images/docs/shipping-info.png)
+
+## [Product overrides](/docs/product-overrides)
+
+* Disable or enable Delm for single products
+* Override delivery areas - useful if you have products with varying delivery times
+
+![Product overrides](/images/docs/product-overrides.png)
+
+## [Holidays](/docs/holidays)
+
+* Add and manage business holidays
+
+![Holidays](/images/docs/holidays.png)

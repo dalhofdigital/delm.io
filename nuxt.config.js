@@ -20,7 +20,7 @@ export default {
     '~/plugins/mediumzoom.js'
   ],
   transition: '',
-  loading: { color: '#3B8070' },
+  loading: { color: '#3476D1' },
   modules: [
     ['@nuxtjs/google-analytics', { id: 'UA-56780752-9' }],
     ['@nuxtjs/markdownit', {
@@ -66,11 +66,13 @@ export default {
     }
   },
   router: {
-    scrollBehavior (to) {
+    scrollBehavior (to, from, savedPosition) {
       if (to.hash && document.querySelector(to.hash)) {
         return {
           selector: to.hash
         }
+      } else {
+        return { x: 0, y: 0 }
       }
     }
   }

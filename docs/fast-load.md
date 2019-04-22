@@ -1,8 +1,8 @@
 # Delm fast load
 
-If fast load is disabled, we automatically inject a JavaScript file via the Shopify ScriptTag API to your store.
+If fast load is disabled, we automatically inject a JavaScript file via the [Shopify ScriptTag API](https://help.shopify.com/en/api/reference/online-store/scripttag) to your store.
 
-Because all ScriptTags are being loaded at the very end of page load, you might experience a slight delay before the app gets visible.
+Because all ScriptTags are being loaded at the very end of the page load cycle, you might experience a slight delay before the shipping info gets visible.
 
 ## How to enable fast load
 

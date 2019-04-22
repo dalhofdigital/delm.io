@@ -1,16 +1,18 @@
 # Shipping info
 
-## Shipping info types
+In Delm, there are three shipping info *variants*. We have introduced three variants to make the shipping info as flexible as possible. You are able to use *variables* (see below) in each variant.
 
-In Delm, there are three shipping info *types*.
-
-| Type                | ⚠️ When is it used?                          |
+| Variant             | ⚠️ When is it used?                          |
 | :------------------ | :------------------------------------------- |
 | Default             | Calculated delivery date is **not tomorrow** |
-| Delivery time range | Calculated delivery date is a **date range** |
 | Next day delivery   | Calculated delivery date is **tomorrow**     |
+| Delivery time range | Calculated delivery date is a **date range** |
 
-### Default example
+Note: In the shipping info you may use some good ol' HTML!
+
+![Delivery areas](/gifs/shipping-info.gif)
+
+## Default example
 
 ```html
 Want it {{date type="delivery" format="[dddd], [mmm]. [dd]"}}? Order within {{countdown hide_zero_values="true" unit_format="long" show_seconds="4_hours"}}.
@@ -18,25 +20,25 @@ Want it {{date type="delivery" format="[dddd], [mmm]. [dd]"}}? Order within {{co
 
 > Want it Thursday, Apr. 11? Order within 19 hours and 29 minutes.
 
-### Delivery time range example
-
-```html
-Delivery between {{date type="delivery_min" format="[ddd]., [mmm]. [dd]"}} and {{date type="delivery_max" format="[ddd]., [mmm]. [dd]"}}. Order within{{countdown hide_zero_values="true" unit_format="short" show_seconds="4_hours"}}.
-```
-
-> Delivery between Fri., Apr. 12 and Mon., Apr. 15. Order within 19 hrs and 17 min.
-
-### Next day delivery example
+## Next day delivery example
 
 ```html
 Want it tomorrow, {{date type="delivery" format="[mmm]. [dd]"}}? Order within {{countdown hide_zero_values="true" unit_format="short" show_seconds="4_hours"}}.
 ```
 
-> Want it tomorrow, Apr. 11? Order within 1 day, 2 hrs and 43 min.
+> Want it tomorrow, Apr. 11? Order within 19 hours and 29 minutes.
+
+## Delivery time range example
+
+```html
+Delivery between {{date type="delivery_min" format="[ddd]., [mmm]. [dd]"}} and {{date type="delivery_max" format="[ddd]., [mmm]. [dd]"}}. Order within {{countdown hide_zero_values="true" unit_format="short" show_seconds="4_hours"}}.
+```
+
+> Delivery between Fri., Apr. 12 and Mon., Apr. 15. Order within 19 hrs and 17 min.
 
 ## Variables
 
-### Date variable - {{date}}
+### {{date}}
 
 `{{date}}` renders a delivery date or dispatch date.
 
@@ -71,7 +73,7 @@ Want it tomorrow, {{date type="delivery" format="[mmm]. [dd]"}}? Order within {{
 | `[yyyy]` | 2019    | 4 digit year                                           |
 | `[yy]`   | 19      | 2 digit year                                           |
 
-### Countdown variable - {{countdown}}
+### {{countdown}}
 
 `{{countdown}}` renders a countdown that counts down to the next cut-off date. The cut-off countdown helps you to create urgency without being too pushy.
 

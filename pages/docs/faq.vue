@@ -14,12 +14,12 @@ export default {
   },
   head () {
     return {
-      title: 'Enable fast load',
+      title: 'FAQ - Delm',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: `Learn how to enable the fast load option in Delm.`
+          content: `Delm frequently asked questions.`
         }
       ]
     }

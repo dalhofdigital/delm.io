@@ -1,6 +1,19 @@
 # Delivery areas
 
-![xD](https://i.imgur.com/ulEpheo.gif)
+With delivery areas, you are able to model simple and sophisticated delivery setups.
+
+In a delivery area, delivery time, deliverable days and language are defined. A delivery area can have multiple countries and regions/states attached to it.
+
+
+## How delivery areas work
+
+When a visitor visits your store, we are able to get his location (country and region/state) through his IP address and then try to match it with a delivery area that you've created.
+
+If his location has matched with a delivery area, the shipping info will be shown with the configuration of your delivery area. If his location does not match with a delivery area, we will fallback to the "Rest of world" settings.
+
+**We strongly recommend that you research the correct delivery times for the respective countries and regions/states.**
+
+![Delivery areas](/gifs/delivery-areas.gif)
 
 ## How to test your delivery areas
 

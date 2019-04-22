@@ -1,39 +1,6 @@
 <template>
   <v-app>
-    <DelmNavbar />
-    <v-navigation-drawer
-      value="true"
-      stateless
-      app
-      fixed
-      clipped
-      floating
-      id="sidebar"
-    >
-      <div>
-        <v-list subheader>
-          <div
-            v-for="group in navigation.groups"
-            :key="group.title"
-          >
-            <v-subheader class="subheading font-weight-bold grey--text text--darken-3">{{ group.title }}</v-subheader>
-            <v-list-tile
-              v-for="item in group.items"
-              :key="item.title"
-              :to="{ name: item.route }"
-              :exact="item.exact"
-              :nuxt="true"
-              ripple
-              color="grey darken-1"
-            >
-              <v-list-tile-content>
-                <v-list-tile-title style="font-size:16px">{{ item.title }}</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-          </div>
-        </v-list>
-      </div>
-    </v-navigation-drawer>
+    <DelmNavbar :navigation="navigation" />
     <v-content id="content">
       <v-container class="docs">
         <nuxt />
@@ -68,27 +35,27 @@ export default {
               {
                 title: 'Getting started',
                 route: 'docs-getting-started',
-                exact: true
-              },
-              {
-                title: 'Shipping info',
-                route: 'docs-shipping-info',
-                exact: true
+                exact: false
               },
               {
                 title: 'Delivery areas',
                 route: 'docs-delivery-areas',
-                exact: true
+                exact: false
+              },
+              {
+                title: 'Shipping info',
+                route: 'docs-shipping-info',
+                exact: false
               },
               {
                 title: 'Product overrides',
                 route: 'docs-product-overrides',
-                exact: true
+                exact: false
               },
               {
                 title: 'Holidays',
                 route: 'docs-holidays',
-                exact: true
+                exact: false
               }
             ]
           },

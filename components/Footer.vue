@@ -14,10 +14,12 @@
             class="footer-link"
           >
             <nuxt-link
+              v-if="link.routeName"
               :to="{ name: link.routeName }"
             >
               {{ link.title }}
             </nuxt-link>
+            <a v-else :href="link.href">{{ link.title }}</a>
           </div>
         </div>
       </v-container>
@@ -33,6 +35,10 @@ export default {
         {
           title: 'Support',
           routeName: 'docs-support'
+        },
+        {
+          title: 'Public Trello board',
+          href: 'https://trello.com/b/Vel5ZNX7/delm-public-board-for-new-features-and-bugs'
         },
         {
           title: 'Privacy policy',

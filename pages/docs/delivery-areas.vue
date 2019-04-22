@@ -14,7 +14,7 @@ export default {
   },
   head () {
     return {
-      title: 'Delm documentation - Fast load',
+      title: 'Delivery areas - Delm',
       meta: [
         {
           hid: 'description',

@@ -14,12 +14,12 @@ export default {
   },
   head () {
     return {
-      title: 'Delm documentation - Fast load',
+      title: 'Product overrides - Delm',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: `With Delivery Message, you can add messages like "Want it tomorrow? Order within 2 hrs, 32 mins and 21 secs." to your product pages.`
+          content: `Product overrides are being used to override delivery area configurations. That is useful especially if you have products with varying delivery times.`
         }
       ]
     }
