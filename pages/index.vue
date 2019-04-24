@@ -5,7 +5,7 @@
         <v-layout row :wrap="$vuetify.breakpoint.sm" align-center justify-center>
           <v-flex md6>
             <div class="mb-4">
-              <h1 style="font-size:34px" class="mb-1 text-xs-center text-md-left font-weight-bold">Enhance your Shopify product pages with estimated delivery dates</h1>
+              <h1 style="font-size:32px" class="mb-1 text-xs-center text-md-left font-weight-bold">Enhance your Shopify product pages with estimated delivery dates</h1>
               <p class="mb-4 grey--text text--darken-1 text-xs-center text-md-left" style="font-weight:300;font-size:22px">$12/month. Risk free with our 3-day free trial.</p>
             </div>
             <v-layout row :justify-center="$vuetify.breakpoint.smAndDown">
