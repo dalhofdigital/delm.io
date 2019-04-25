@@ -6,7 +6,7 @@
           <v-flex md6>
             <div class="mb-4">
               <h1 style="font-size:32px" class="mb-1 text-xs-center text-md-left font-weight-bold">Enhance your Shopify product pages with estimated delivery dates</h1>
-              <p class="mb-4 grey--text text--darken-1 text-xs-center text-md-left" style="font-weight:300;font-size:22px">$12/month. Risk free with our 3-day free trial.</p>
+              <p class="mb-4 grey--text text--darken-1 text-xs-center text-md-left" style="font-weight:300;font-size:22px">${{ price }}/month. Risk free with our {{ trialLength }}-day free trial.</p>
             </div>
             <v-layout row :justify-center="$vuetify.breakpoint.smAndDown">
               <v-flex shrink>
@@ -40,7 +40,7 @@
                 <div class="product-image"></div>
                 <div class="product-info">
                   <div class="product-name">Your Awesome Product Page</div>
-                  <div class="product-price">$12/month</div>
+                  <div class="product-price">${{ price }}/month</div>
                   <div class="product-cta">
                     <a href="https://apps.shopify.com/delm">Add to cart</a>
                   </div>
@@ -132,6 +132,8 @@ export default {
   },
   data () {
     return {
+      price: 8.62,
+      trialLength: 7,
       features: [
         {
           title: 'Fully customizable shipping info',
