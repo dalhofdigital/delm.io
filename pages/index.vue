@@ -164,16 +164,16 @@ export default {
   },
   methods: {
     minDeliveryDate () {
-      const date = moment().add('days', 3)
+      const date = moment().add(3, 'days')
       while (date.format('dddd') === 'Saturday' || date.format('dddd') === 'Sunday') {
-        date.add('days', 1)
+        date.add(1, 'days')
       }
       return date
     },
     maxDeliveryDate () {
-      const date = this.minDeliveryDate().clone().add('days', 2)
+      const date = this.minDeliveryDate().clone().add(2, 'days')
       while (date.format('dddd') === 'Saturday' || date.format('dddd') === 'Sunday') {
-        date.add('days', 1)
+        date.add(1, 'days')
       }
       return date
     }
