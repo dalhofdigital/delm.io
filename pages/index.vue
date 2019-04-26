@@ -132,7 +132,7 @@ export default {
   },
   data () {
     return {
-      price: 8.62,
+      price: '8.50',
       trialLength: 7,
       features: [
         {
