@@ -16,8 +16,8 @@ export default {
     ]
   },
   plugins: [
-    '~/plugins/vuetify.js',
-    '~/plugins/mediumzoom.js'
+    { src: '~/plugins/vuetify.js' },
+    { src: '~/plugins/mediumzoom.js', ssr: false }
   ],
   transition: '',
   loading: { color: '#3476D1' },
