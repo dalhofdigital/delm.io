@@ -113,13 +113,17 @@ export default {
     if (!this.isHome(this.$route)) {
       this.showBorder = true
     }
-    window.addEventListener('scroll', this.scrollHandler)
-    window.addEventListener('resize', this.resizeHandler)
-    this.resizeHandler()
+    if (process.browser) {
+      window.addEventListener('scroll', this.scrollHandler)
+      window.addEventListener('resize', this.resizeHandler)
+      this.resizeHandler()
+    }
   },
   destroyed () {
-    window.removeEventListener('scroll', this.scrollHandler)
-    window.removeEventListener('resize', this.resizeHandler)
+    if (process.browser) {
+      window.removeEventListener('scroll', this.scrollHandler)
+      window.removeEventListener('resize', this.resizeHandler)
+    }
   }
 }
 </script>
