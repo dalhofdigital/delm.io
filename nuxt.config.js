@@ -2,7 +2,7 @@ const nodeExternals = require('webpack-node-externals')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   head: {
     title: 'Delm - Shipping info for Shopify',
     meta: [
