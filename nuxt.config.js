@@ -2,7 +2,7 @@ const nodeExternals = require('webpack-node-externals')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   head: {
     title: 'Delm - Shipping info for Shopify',
     meta: [
@@ -16,8 +16,8 @@ export default {
     ]
   },
   plugins: [
-    { src: '~/plugins/vuetify.js' },
-    { src: '~/plugins/mediumzoom.js', ssr: false }
+    '~/plugins/vuetify.js',
+    '~/plugins/mediumzoom.js'
   ],
   transition: '',
   loading: { color: '#3476D1' },
