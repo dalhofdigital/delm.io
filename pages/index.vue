@@ -58,7 +58,7 @@
 
     <v-container class="py-5" grid-list-xl>
       <div class="text-xs-center mb-5">
-        <h2 style="font-size:28px;font-weight:700">Have a Shopify store? Awesome! <span style="color:#439486;display:inline-block;border-bottom:solid 3px #439486;">We can help you to perform even better</span>.</h2>
+        <h2 style="font-size:28px;font-weight:700">Have a Shopify store? Awesome!<br><span class="highlighted">We can help you to improve your overall performance TODAY</span>.</h2>
       </div>
       <v-layout wrap justify-center align-center>
         <v-flex md4 class="text-xs-center">
@@ -253,7 +253,6 @@ export default {
 }
 .highlighted {
   color: #439486;
-  display: inline-block;
   border-bottom: solid 3px #439486;
 }
 </style>
