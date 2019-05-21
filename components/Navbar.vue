@@ -15,10 +15,10 @@
         v-if="navigation && (window.width <= mobileBreakpoint)"
         @click="drawer = !drawer"
       ></v-toolbar-side-icon>
-      <nuxt-link to="/" class="d-flex align-center" style="min-width:42px;min-height:42px;width:42px;height:42px">
+      <nuxt-link to="/" class="d-flex align-center" style="min-width:32px;min-height:32px;width:32px;height:32px">
         <img src="/images/logo.png" alt="Delm" class="d-inline-block" style="max-width:100%">
       </nuxt-link>
-      <div class="grey--text text--darken-4 headline font-weight-bold" style="padding-left:18px;font-size:18px!important">Delm</div>
+      <div class="grey--text text--darken-4 headline" style="padding-left:16px;font-size:18px!important">Delm</div>
       <v-spacer></v-spacer>
       <v-btn flat to="/docs">Learn</v-btn>
       <v-btn color="primary" href="https://apps.shopify.com/delm">Install</v-btn>
