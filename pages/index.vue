@@ -253,6 +253,5 @@ export default {
 }
 .highlighted {
   color: #439486;
-  border-bottom: solid 3px #439486;
 }
 </style>
