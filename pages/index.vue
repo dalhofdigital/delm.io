@@ -5,7 +5,7 @@
         <v-layout row :wrap="$vuetify.breakpoint.sm" align-center justify-center>
           <v-flex md6>
             <div class="mb-4">
-              <h1 style="font-size:32px" class="mb-1 text-xs-center text-md-left font-weight-bold">Enhance your Shopify product pages with estimated delivery dates</h1>
+              <h1 style="font-size:30px" class="mb-1 text-xs-center text-md-left font-weight-bold">Estimated delivery date & order deadline for product pages</h1>
               <p class="mb-4 grey--text text--darken-1 text-xs-center text-md-left" style="font-weight:300;font-size:22px">${{ price }}/month. Risk free with our {{ trialLength }}-day free trial.</p>
             </div>
             <v-layout row :justify-center="$vuetify.breakpoint.smAndDown">
@@ -45,7 +45,7 @@
                     <a href="https://apps.shopify.com/delm">Add to cart</a>
                   </div>
                   <div class="product-shipping-info">
-                    <span class="product-shipping-info-date">FREE delivery between <span class="d-inline-block">{{ minDeliveryDate().format('MMM D') }}</span> and <span class="d-inline-block">{{ maxDeliveryDate().format('MMM D') }}</span>.</span> Order within <span class="product-shipping-info-countdown success--text">4 hrs and 20 min</span>.
+                    <span class="product-shipping-info-date">Delivery between <span class="d-inline-block">{{ minDeliveryDate().format('MMM D') }}</span> and <span class="d-inline-block">{{ maxDeliveryDate().format('MMM D') }}</span>.</span> Order within <span class="product-shipping-info-countdown success--text">3 hrs and 22 min</span>.
                   </div>
                   <div><a style="font-size:0.8em" href="https://demo.delm.io/products/demo-1" target="_blank">Visit our demo store</a></div>
                 </div>
@@ -57,30 +57,30 @@
     </div>
 
     <v-container class="py-5" grid-list-xl>
-      <div class="text-xs-center mb-3">
-        <h2 style="font-size:28px;font-weight:700"><span style="color:#439486;display:inline-block;border-bottom:solid 3px #439486;">All merchants</span> should add estimated delivery dates to their product pages</h2>
+      <div class="text-xs-center mb-5">
+        <h2 style="font-size:28px;font-weight:700">Have a Shopify store? Awesome! <span style="color:#439486;display:inline-block;border-bottom:solid 3px #439486;">We can help you to perform even better</span>.</h2>
       </div>
       <v-layout wrap justify-center align-center>
         <v-flex md4 class="text-xs-center">
           <div class="mb-4">
-            <img style="height:160px" src="/images/investing.svg" alt="Increase conversion rate" class="no-zoom">
+            <img style="height:160px" src="/images/conversion-rate.svg" alt="Increase conversion rate" class="no-zoom">
           </div>
-          <h3 class="mb-2" style="font-size:22px;font-weight:700">Increase conversion rate (<a target="_blank" href="https://web.archive.org/web/20190418222132/https://baymard.com/blog/shipping-speed-vs-delivery-date">more</a>)</h3>
-          <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Convert more visitors into customers by solving a seemingly simple question: "When will my order arrive?"</p>
+          <h3 class="mb-2" style="font-size:22px;font-weight:700">🛒 <a target="_blank" href="https://web.archive.org/web/20190418222132/https://baymard.com/blog/shipping-speed-vs-delivery-date">Increase conversion rate</a></h3>
+          <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Solve a seemingly simple customer question "When will my order arrive?" and create urgency by showing your order deadline.</p>
         </v-flex>
         <v-flex md4 class="text-xs-center">
           <div class="mb-4">
-            <img style="height:160px" src="/images/online-shopping.svg" alt="Improve user experience" class="no-zoom">
+            <img style="height:160px" src="/images/user-experience.svg" alt="Improve user experience" class="no-zoom">
           </div>
-          <h3 class="mb-2" style="font-size:22px;font-weight:700">Improve user experience</h3>
-          <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Don't make your visitors leave your product pages. Design your product pages as convenient as possible.</p>
+          <h3 class="mb-2" style="font-size:22px;font-weight:700">✨ Improve user experience</h3>
+          <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Stop forcing your customers to leave your product pages for more information about shipping by adding estimated delivery dates.</p>
         </v-flex>
         <v-flex md4 class="text-xs-center">
           <div class="mb-4">
-            <img style="height:160px" src="/images/questions.svg" alt="Reduce support requests" class="no-zoom">
+            <img style="height:160px" src="/images/save-time.svg" alt="Save valuable time" class="no-zoom">
           </div>
-          <h3 class="mb-2" style="font-size:22px;font-weight:700">Reduce support requests</h3>
-          <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Invest your precious time in other things because fewer customers will ask you delivery related questions.</p>
+          <h3 class="mb-2" style="font-size:22px;font-weight:700">🎉 Save valuable time</h3>
+          <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Spend less time answering support tickets. Most delivery date related questions will be answered instantly on your product pages.</p>
         </v-flex>
       </v-layout>
     </v-container>
@@ -132,7 +132,7 @@ export default {
   },
   data () {
     return {
-      price: '8.50',
+      price: '8.49',
       trialLength: 7,
       features: [
         {
@@ -250,5 +250,10 @@ export default {
       }
     }
   }
+}
+.highlighted {
+  color: #439486;
+  display: inline-block;
+  border-bottom: solid 3px #439486;
 }
 </style>

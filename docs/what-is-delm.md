@@ -6,14 +6,14 @@
 
 We strongly believe that estimated delivery dates are an essential element of every e-commerce store that sells physical products. Visitors are interested about the delivery date before placing an order.
 
-### Increase conversion rate ([more](https://web.archive.org/web/20190418222132/https://baymard.com/blog/shipping-speed-vs-delivery-date))
+### 🛒 Increase conversion rate ([more](https://web.archive.org/web/20190418222132/https://baymard.com/blog/shipping-speed-vs-delivery-date))
 
-Convert more visitors into customers by solving a seemingly simple question: "When will my order arrive?"
+Solve a seemingly simple customer question "When will my order arrive?" and create urgency by showing your order deadline.
 
-### Improve user experience
+### ✨ Improve user experience
 
-Don't make your visitors leave your product pages. Design your product pages as convenient as possible.
+Stop forcing your customers to leave your product pages for more information about shipping by adding estimated delivery dates.
 
-### Reduce support requests
+### 🎉 Save valuable time
 
-Invest your precious time in other things because fewer customers will ask you delivery related questions.
+Spend less time answering support tickets. Most delivery date related questions will be answered instantly on your product pages.
