@@ -1,12 +1,20 @@
-# Delm fast load
+# Manually include our JavaScript file
 
-If fast load is disabled, we automatically inject a JavaScript file via the [Shopify ScriptTag API](https://help.shopify.com/en/api/reference/online-store/scripttag) to your store.
+If the option **Manually include our JavaScript file** disabled, we automatically inject a JavaScript file via the [Shopify ScriptTag API](https://help.shopify.com/en/api/reference/online-store/scripttag) to your store.
 
-Because all ScriptTags are being loaded at the very end of the page load cycle, you might experience a slight delay before the shipping info gets visible.
+Because all ScriptTags are being loaded at the **very end** of the page load cycle, you might experience a **slight delay before the shipping info gets visible**.
 
-## How to enable fast load
+The delay can be reduced by manually including our script file.
 
-The delay can be reduced by adding the following line of code just above `</head>` in your `theme.liquid` file.
+Please contact us if you need help!
+
+**Note:** You have to manually remove the script on app uninstall. We don't do that automatically.
+
+## How to manually include our JavaScript file
+
+1. Open your `theme.liquid` file
+2. Search for `</head>`
+3. Copy and paste our script just before `</head>`
 
 ```html
 <script async src="https://cdn.delm.io/deliverymessage.js"></script>

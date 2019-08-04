@@ -6,14 +6,23 @@ Let's walk through the most important settings to get you started.
 
 > Please do not hesitate to [get in touch with us](/docs/support) if you have any questions!
 
+![Delm home screen](/images/docs/home.png)
+
 ## App settings
 
 * Enable or disable Delm
-* Adjust your working days and daily dispatch times
 * Change shipping info position on your product pages
 * Add custom CSS
 
 ![App settings](/images/docs/app-settings.png)
+
+## [Date calculation](/docs/date-calculation)
+
+* Your working days and dispatch times
+* Shipping carrier working days
+* Delay (may be used to add processing time)
+
+![Date calculation](/images/docs/date-calculation.png)
 
 ## [Delivery areas](/docs/delivery-areas)
 

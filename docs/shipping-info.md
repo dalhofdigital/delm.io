@@ -10,7 +10,10 @@ In Delm, there are three shipping info *variants*. We have introduced three vari
 
 Note: In the shipping info you may use some good ol' HTML!
 
-![Delivery areas](/gifs/shipping-info.gif)
+<video controls style="max-width:100%;height:auto">
+    <source src="/videos/shipping-info.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 ## Default example
 
