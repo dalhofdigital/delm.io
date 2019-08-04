@@ -20,8 +20,8 @@
       </nuxt-link>
       <div class="grey--text text--darken-4 headline" style="padding-left:16px;font-size:18px!important">Delm</div>
       <v-spacer></v-spacer>
-      <v-btn flat to="/docs">Learn</v-btn>
-      <v-btn color="primary" href="https://apps.shopify.com/delm">Install</v-btn>
+      <v-btn flat to="/docs">Docs</v-btn>
+      <v-btn color="primary" href="https://apps.shopify.com/delm">Install Delm</v-btn>
     </v-toolbar>
     <v-navigation-drawer
       v-if="navigation"
