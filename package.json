@@ -12,18 +12,6 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.2.0",
-<<<<<<< HEAD
-    "core-js": "^2.6.10",
-    "medium-zoom": "^1.0.4",
-    "moment": "^2.24.0",
-    "nuxt": "^2.10.1",
-    "prismjs": "^1.16.0",
-    "vuetify": "^1.5.18"
-  },
-  "devDependencies": {
-    "@nuxtjs/markdownit": "^1.2.7",
-    "acorn": "^6.3.0",
-=======
     "core-js": "^2.6.9",
     "medium-zoom": "^1.0.4",
     "moment": "^2.24.0",
@@ -34,7 +22,6 @@
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.6",
     "acorn": "^6.2.1",
->>>>>>> 8c09050f2c17b05a70bf615b0cb822531d0958ca
     "acorn-dynamic-import": "^4.0.0",
     "babel-eslint": "^7.2.3",
     "eslint": "^4.3.0",
@@ -48,8 +35,8 @@
     "markdown-it-anchor": "^5.2.4",
     "node-sass": "^4.12.0",
     "push-dir": "^0.4.1",
-    "sass-loader": "^7.3.1",
-    "stylus": "^0.54.7",
+    "sass-loader": "^7.1.0",
+    "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vuetify-loader": "^1.3.0",
     "webpack": "4.28.4"

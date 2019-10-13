@@ -2,11 +2,22 @@
   <div class="home">
     <div style="position:relative;overflow:hidden">
       <v-container>
+        <v-card color="success" dark class="mb-3 elevation-5">
+          <v-card-text>
+            <div class="mb-1 subheading font-weight-bold">
+              🥳🙌 Special offer sponsored by our friends at <a style="color:#fff" target="_blank" href="https://ecommercefastlane.com/">ecommercefastlane.com</a>
+            </div>
+            <div>Try Delm for free with our <strong>extended 30 day trial</strong> instead of just 7 days. Only valid from October 14th to October 28th.</div>
+          </v-card-text>
+        </v-card>
         <v-layout row :wrap="$vuetify.breakpoint.sm" align-center justify-center>
           <v-flex md6>
             <div class="mb-4">
-              <h1 style="font-size:34px" class="mb-1 text-xs-center text-md-left font-weight-bold">Add estimated delivery dates to your Shopify product pages</h1>
-              <p class="mb-4 grey--text text--darken-1 text-xs-center text-md-left" style="font-weight:300;font-size:22px">For just $12/month. Risk free with our 3-day free trial.</p>
+              <h1 style="font-size:30px" class="mb-2 text-xs-center text-md-left font-weight-bold">Add estimated delivery dates and order deadlines to your Shopify product pages</h1>
+              <p class="mb-4 grey--text text--darken-2 text-xs-center text-md-left" style="font-weight:300;font-size:22px">
+                Try for free with our <strong><strike>{{ trialLength }}-day</strike> 30-day</strong> trial.
+                <br>For just ${{ price }}/month. 
+              </p>
             </div>
             <v-layout row :justify-center="$vuetify.breakpoint.smAndDown">
               <v-flex shrink>
@@ -16,7 +27,7 @@
                   large
                   class="ma-0"
                 >
-                  Add to your store
+                  Add Delm to your store
                 </v-btn>
               </v-flex>
               <v-flex shrink class="mx-3">
@@ -25,7 +36,7 @@
                   large
                   class="ma-0"
                 >
-                  Get started
+                  Read docs
                 </v-btn>
               </v-flex>
             </v-layout>
@@ -40,12 +51,12 @@
                 <div class="product-image"></div>
                 <div class="product-info">
                   <div class="product-name">Your Awesome Product Page</div>
-                  <div class="product-price">$12/month</div>
+                  <div class="product-price">${{ price }}/month</div>
                   <div class="product-cta">
                     <a href="https://apps.shopify.com/delm">Add to cart</a>
                   </div>
                   <div class="product-shipping-info">
-                    <span class="product-shipping-info-date">FREE delivery between <span class="d-inline-block">{{ minDeliveryDate().format('MMM. D') }}</span> and <span class="d-inline-block">{{ maxDeliveryDate().format('MMM. D') }}</span>.</span> Order within <span class="product-shipping-info-countdown success--text">4 hrs and 20 min</span>.
+                    <span class="product-shipping-info-date">Delivery between <span class="d-inline-block">{{ minDeliveryDate().format('MMM D') }}</span> and <span class="d-inline-block">{{ maxDeliveryDate().format('MMM D') }}</span>.</span><br>Order within <span class="product-shipping-info-countdown success--text">3 hrs and 22 min</span>.
                   </div>
                   <div><a style="font-size:0.8em" href="https://demo.delm.io/products/demo-1" target="_blank">Visit our demo store</a></div>
                 </div>
@@ -57,30 +68,27 @@
     </div>
 
     <v-container class="py-5" grid-list-xl>
-      <div class="text-xs-center mb-3">
-        <h2 style="font-size:28px;font-weight:700"><span style="color:#439486;display:inline-block;border-bottom:solid 3px #439486;">All merchants</span> should add estimated delivery dates to their product pages</h2>
-      </div>
       <v-layout wrap justify-center align-center>
         <v-flex md4 class="text-xs-center">
           <div class="mb-4">
-            <img style="height:160px" src="/images/investing.svg" alt="Increase conversion rate" class="no-zoom">
+            <img style="height:160px" src="/images/conversion-rate.svg" alt="Increase conversion rate" class="no-zoom">
           </div>
-          <h3 class="mb-2" style="font-size:22px;font-weight:700">Increase conversion rate (<a target="_blank" href="https://web.archive.org/web/20190418222132/https://baymard.com/blog/shipping-speed-vs-delivery-date">more</a>)</h3>
-          <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Convert more visitors into customers by solving a seemingly simple question: "When will my order arrive?"</p>
+          <h3 class="mb-2" style="font-size:22px;font-weight:700">🛒 <a target="_blank" href="https://web.archive.org/web/20190418222132/https://baymard.com/blog/shipping-speed-vs-delivery-date">Increase conversion rate</a></h3>
+          <p style="font-size:22px;font-weight:400;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Solve a seemingly simple customer question "When will my order arrive?" and create urgency by showing your order deadline.</p>
         </v-flex>
         <v-flex md4 class="text-xs-center">
           <div class="mb-4">
-            <img style="height:160px" src="/images/online-shopping.svg" alt="Improve user experience" class="no-zoom">
+            <img style="height:160px" src="/images/user-experience.svg" alt="Improve user experience" class="no-zoom">
           </div>
-          <h3 class="mb-2" style="font-size:22px;font-weight:700">Improve user experience</h3>
-          <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Don't make your visitors leave your product pages. Design your product pages as convenient as possible.</p>
+          <h3 class="mb-2" style="font-size:22px;font-weight:700">✨ Improve user experience</h3>
+          <p style="font-size:22px;font-weight:400;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Stop forcing your customers to leave your product pages for more information about shipping by adding estimated delivery dates.</p>
         </v-flex>
         <v-flex md4 class="text-xs-center">
           <div class="mb-4">
-            <img style="height:160px" src="/images/questions.svg" alt="Reduce support requests" class="no-zoom">
+            <img style="height:160px" src="/images/save-time.svg" alt="Save valuable time" class="no-zoom">
           </div>
-          <h3 class="mb-2" style="font-size:22px;font-weight:700">Reduce support requests</h3>
-          <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Invest your precious time in other things because fewer customers will ask you delivery related questions.</p>
+          <h3 class="mb-2" style="font-size:22px;font-weight:700">🎉 Save valuable time</h3>
+          <p style="font-size:22px;font-weight:400;margin:0;padding:0" class="grey--text text--darken-1 mb-0">Spend less time answering support tickets. Most delivery date related questions will be answered instantly on your product pages.</p>
         </v-flex>
       </v-layout>
     </v-container>
@@ -105,9 +113,8 @@
             <v-flex shrink>
               <div style="max-width:500px">
                 <h3 style="font-size:28px;margin:0;padding:0">{{ feature.title }}</h3>
-                <p style="font-size:22px;font-weight:300;margin:0;padding:0" class="grey--text text--darken-1 mb-0" v-html="feature.description"></p>
+                <p style="font-size:22px;font-weight:400;margin:0;padding:0" class="grey--text text--darken-1 mb-0" v-html="feature.description"></p>
                 <div class="mt-3">
-                  <v-btn class="ml-0" color="primary" href="https://apps.shopify.com/delm">Install</v-btn>
                   <v-btn class="ml-0" :to="{ name: feature.routeName }">Learn more</v-btn>
                 </div>
               </div>
@@ -132,6 +139,8 @@ export default {
   },
   data () {
     return {
+      price: '8.49',
+      trialLength: 7,
       features: [
         {
           title: 'Fully customizable shipping info',
@@ -162,16 +171,16 @@ export default {
   },
   methods: {
     minDeliveryDate () {
-      const date = moment().add('days', 3)
+      const date = moment().add(3, 'days')
       while (date.format('dddd') === 'Saturday' || date.format('dddd') === 'Sunday') {
-        date.add('days', 1)
+        date.add(1, 'days')
       }
       return date
     },
     maxDeliveryDate () {
-      const date = this.minDeliveryDate().clone().add('days', 2)
+      const date = this.minDeliveryDate().clone().add(2, 'days')
       while (date.format('dddd') === 'Saturday' || date.format('dddd') === 'Sunday') {
-        date.add('days', 1)
+        date.add(1, 'days')
       }
       return date
     }
@@ -213,7 +222,7 @@ export default {
   }
   .product-info {
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 1em;
     color: #777;
     .product-name {
     }
@@ -225,15 +234,16 @@ export default {
       padding-bottom: 5px;
       a {
         display: inline-block;
-        padding: 5px 8px;
-        font-size: .8em;
+        padding: 6px 8px;
+        font-size: .9em;
         line-height: .9em;
         text-transform: uppercase;
         background:#439486;
         color: #fff;
-        font-weight: 600;
+        font-weight: 500;
         text-decoration: none;
         letter-spacing: 1px;
+        border-radius: 3px;
         &:hover {
           background: darken(#439486, 10%);
         }
@@ -242,11 +252,12 @@ export default {
     .product-shipping-info {
       color: #333;
       .product-shipping-info-date {
-        font-weight: 600;
-      }
-      .product-shipping-info-countdown {
+        font-weight: 700;
       }
     }
   }
+}
+.highlighted {
+  color: #439486;
 }
 </style>

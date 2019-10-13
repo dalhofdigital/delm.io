@@ -9,7 +9,6 @@
       light
       height="58"
       clipped-left
-      :data-border="showBorder"
     >
       <v-toolbar-side-icon
         v-if="navigation && (window.width <= mobileBreakpoint)"
@@ -18,7 +17,7 @@
       <nuxt-link to="/" class="d-flex align-center" style="min-width:32px;min-height:32px;width:32px;height:32px">
         <img src="/images/logo.png" alt="Delm" class="d-inline-block" style="max-width:100%">
       </nuxt-link>
-      <div class="grey--text text--darken-4 headline" style="padding-left:16px;font-size:18px!important">Delm</div>
+      <div class="grey--text text--darken-4 headline" style="padding-left:16px;font-size:18px!important">Delm: Delivery Message</div>
       <v-spacer></v-spacer>
       <v-btn flat to="/docs">Docs</v-btn>
       <v-btn color="primary" href="https://apps.shopify.com/delm">Install Delm</v-btn>
@@ -72,20 +71,10 @@ export default {
   data () {
     return {
       drawer: null,
-      showBorder: false,
       mobileBreakpoint: 860,
       window: {
         width: 0,
         height: 0
-      }
-    }
-  },
-  watch: {
-    '$route' (to, from) {
-      if (!this.isHome(to)) {
-        this.showBorder = true
-      } else {
-        this.showBorder = false
       }
     }
   },
@@ -127,12 +116,9 @@ export default {
 <style lang="scss">
 #nav {
   z-index: 11;
-  background-color: transparent;
   transition: none;
-  &[data-border="true"] {
-    background-color: #fff;
-    border-bottom: solid 1px #eee;
-  }
+  background-color: #fff;
+  border-bottom: solid 1px #eee;
 }
 #sidebar[data-zindex="true"] {
   z-index: 12;

@@ -5,8 +5,11 @@
         <v-layout row :wrap="$vuetify.breakpoint.sm" align-center justify-center>
           <v-flex md6>
             <div class="mb-4">
-              <h1 style="font-size:30px" class="mb-2 text-xs-center text-md-left font-weight-bold">Estimated delivery date & order deadline for Shopify product pages</h1>
-              <p class="mb-4 grey--text text--darken-1 text-xs-center text-md-left" style="font-weight:400;font-size:22px">For just ${{ price }}/month. Try for free with our {{ trialLength }}-day trial.</p>
+              <h1 style="font-size:30px" class="mb-2 text-xs-center text-md-left font-weight-bold">Add estimated delivery dates and order deadlines to your Shopify product pages</h1>
+              <p class="mb-4 grey--text text--darken-2 text-xs-center text-md-left" style="font-weight:300;font-size:22px">
+                Try for free with our {{ trialLength }}-day trial.
+                <br>For just ${{ price }}/month. 
+              </p>
             </div>
             <v-layout row :justify-center="$vuetify.breakpoint.smAndDown">
               <v-flex shrink>
