@@ -13,7 +13,10 @@ If his location has matched with a delivery area, the shipping info will be show
 
 **We strongly recommend that you research the correct delivery times for the respective countries and regions/states.**
 
-![Delivery areas](/gifs/delivery-areas.gif)
+<video controls style="max-width:100%;height:auto">
+    <source src="/videos/create-delivery-area.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 ## How to test your delivery areas
 
@@ -33,3 +36,8 @@ Append `?delm_country=US&delm_region=CA` to your product URL to set your current
 ```text
 https://yourstore.com/product/awesome-product?delm_country=US&delm_region=CA
 ```
+
+<video controls style="max-width:100%;height:auto">
+    <source src="/videos/debug-delivery-area.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>

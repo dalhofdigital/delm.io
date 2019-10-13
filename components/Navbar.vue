@@ -12,16 +12,16 @@
       :data-border="showBorder"
     >
       <v-toolbar-side-icon
-        v-if="window.width <= mobileBreakpoint"
+        v-if="navigation && (window.width <= mobileBreakpoint)"
         @click="drawer = !drawer"
       ></v-toolbar-side-icon>
-      <nuxt-link to="/" class="d-flex align-center" style="min-width:42px;min-height:42px;width:42px;height:42px">
+      <nuxt-link to="/" class="d-flex align-center" style="min-width:32px;min-height:32px;width:32px;height:32px">
         <img src="/images/logo.png" alt="Delm" class="d-inline-block" style="max-width:100%">
       </nuxt-link>
-      <div class="grey--text text--darken-4 headline font-weight-bold" style="padding-left:15px;font-size:20px!important">Delm</div>
+      <div class="grey--text text--darken-4 headline" style="padding-left:16px;font-size:18px!important">Delm</div>
       <v-spacer></v-spacer>
-      <v-btn flat to="/docs">Learn</v-btn>
-      <v-btn color="primary" href="https://apps.shopify.com/delm">Add to your store</v-btn>
+      <v-btn flat to="/docs">Docs</v-btn>
+      <v-btn color="primary" href="https://apps.shopify.com/delm">Install Delm</v-btn>
     </v-toolbar>
     <v-navigation-drawer
       v-if="navigation"
@@ -32,6 +32,7 @@
       floating
       id="sidebar"
       :mobile-break-point="mobileBreakpoint"
+      :data-zindex="window.width <= mobileBreakpoint"
     >
       <div>
         <v-list subheader>
@@ -132,5 +133,8 @@ export default {
     background-color: #fff;
     border-bottom: solid 1px #eee;
   }
+}
+#sidebar[data-zindex="true"] {
+  z-index: 12;
 }
 </style>

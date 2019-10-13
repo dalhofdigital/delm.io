@@ -14,7 +14,7 @@ export default {
   },
   head () {
     return {
-      title: 'Troubleshooting',
+      title: 'Troubleshooting - Delm',
       meta: [
         {
           hid: 'description',

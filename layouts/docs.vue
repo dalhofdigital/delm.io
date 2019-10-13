@@ -38,6 +38,11 @@ export default {
                 exact: false
               },
               {
+                title: 'Date calculation',
+                route: 'docs-date-calculation',
+                exact: false
+              },
+              {
                 title: 'Delivery areas',
                 route: 'docs-delivery-areas',
                 exact: false
@@ -83,7 +88,7 @@ export default {
             title: 'Guides',
             items: [
               {
-                title: 'Enable fast load',
+                title: 'Manually include our JavaScript file',
                 route: 'docs-fast-load',
                 exact: true
               },
