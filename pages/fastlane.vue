@@ -15,7 +15,7 @@
             <div class="mb-4">
               <h1 style="font-size:30px" class="mb-2 text-xs-center text-md-left font-weight-bold">Add estimated delivery dates and order deadlines to your Shopify product pages</h1>
               <p class="mb-4 grey--text text--darken-2 text-xs-center text-md-left" style="font-weight:300;font-size:22px">
-                Try for free with our <strong><strike>{{ trialLength }}-day</strike> 30-day</strong> trial.
+                Try for free with our <strong><strike>{{ trialLength }}-day</strike> limited extended 30-day</strong> trial.
                 <br>For just ${{ price }}/month. 
               </p>
             </div>
