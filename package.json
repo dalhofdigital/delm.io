@@ -11,13 +11,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/google-analytics": "^2.2.1",
     "core-js": "^2.6.9",
     "medium-zoom": "^1.0.4",
     "moment": "^2.24.0",
-    "nuxt": "^2.8.1",
+    "nuxt": "^2.10.2",
     "prismjs": "^1.17.1",
-    "vuetify": "^1.5.16"
+    "vuetify": "^1.5.19"
   },
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.6",
@@ -32,8 +32,8 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "markdown-it-anchor": "^5.2.4",
-    "node-sass": "^4.12.0",
+    "markdown-it-anchor": "^5.2.5",
+    "node-sass": "^4.13.0",
     "push-dir": "^0.4.1",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
