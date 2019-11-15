@@ -7,7 +7,7 @@
             <div class="mb-1 subheading font-weight-bold">
               🥳🙌 Special offer sponsored by our friends at <a style="color:#fff" target="_blank" href="https://ecommercefastlane.com/">eCommerceFastlane.com</a>
             </div>
-            <div>Try Delm for free with our <strong>extended 30 day trial</strong> instead of just 7 days. Only valid from October 14th to October 28th.</div>
+            <div>Try Delm for free with our <strong>extended 30 day trial</strong> instead of just 7 days. Only available from November 15th to November 30th.</div>
           </v-card-text>
         </v-card>
         <v-layout row :wrap="$vuetify.breakpoint.sm" align-center justify-center>
