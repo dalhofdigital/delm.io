@@ -131,8 +131,8 @@ export default {
   },
   data () {
     return {
-      price: '8.49',
-      trialLength: 7,
+      price: '14.49',
+      trialLength: 14,
       features: [
         {
           title: 'Fully customizable shipping info',
