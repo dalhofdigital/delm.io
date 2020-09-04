@@ -33,7 +33,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "markdown-it-anchor": "^5.2.5",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "push-dir": "^0.4.1",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
