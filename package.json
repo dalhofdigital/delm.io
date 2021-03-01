@@ -16,7 +16,7 @@
     "medium-zoom": "^1.0.4",
     "moment": "^2.24.0",
     "nuxt": "^2.10.2",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.23.0",
     "vuetify": "^1.5.19"
   },
   "devDependencies": {
